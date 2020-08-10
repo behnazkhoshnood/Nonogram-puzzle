@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<title>Nonogram puzzle</title>
+</head>
+
+<body>
+	<h2> HOW TO PLAY: </h2>
+	<h6>By switching the button shown here </h6>
+	<div class="btn-group btn-group-toggle" data-toggle="buttons">
+		<label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" checked> Color
+  </label>
+		<label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2"> Blank
+  </label>
+	</div>
+	<h6>you can switch between coloring or leaving the square.<br>
+    Every number represents a sequence. for example:</h6>
+			<span>5</span>
+            <div class="btn-toolbar col-9" role="toolbar" aria-label="Toolbar with button groups">
+				<div class="btn-group mr-2" role="group" aria-label="First group">
+					<button type="button" class="btn btn-secondary">Color</button>
+					<button type="button" class="btn btn-secondary">Color</button>
+					<button type="button" class="btn btn-secondary">Color</button>
+					<button type="button" class="btn btn-secondary">Color</button>
+					<button type="button" class="btn btn-secondary">Color</button>
+				</div>
+	<h6>This means all the 5 squares need to be colored.</h6>
+			<h6>If there is more than one number, there must be at least one blank square between each sequence. For
+			example:</h6>
+			<span>2 - 2</span>
+            <div class="btn-group mr-2 col-9" role="group" aria-label="First group">
+				<button type="button" class="btn btn-secondary">Color</button>
+				<button type="button" class="btn btn-secondary">Color</button>
+				<button type="button" class="btn btn-primary">blank</button>
+				<button type="button" class="btn btn-secondary">Color</button>
+				<button type="button" class="btn btn-secondary">Color</button>
+			</div>
+		</div>
+		<h6>In this case there should be at least one black square between the sequences.</h6>
+
+</body>
+
+</html>
