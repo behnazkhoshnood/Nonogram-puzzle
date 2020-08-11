@@ -1,20 +1,62 @@
 h2,
 h6{
     text-align: center;
+    margin: 10px;
 }
 
 .inline{
     display: inline;
 }
 
-div{
-    align-items: center;
-}
-
 .lvl-2{
-    margin:auto 0;
     margin-top: 15vh;
     margin-left: 15vh;
+}
+
+
+.black{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #000;
+}
+
+.red{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #ff0000;
+}
+
+.white{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #d8d8d8;
+}
+
+.green{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #008000;
+}
+
+.blue{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #13e6f5
 }
 
 .square{
@@ -23,17 +65,38 @@ div{
     border: 1px solid;
     text-align: center;
     padding-top: 3px;
+    background-color: #fff;
 }
 
 .head{
     height: 100px;
+    width: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #fff;
 }
 
 .column{
     width: 100px;
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #fff;
 }
 
 .lvl{
+     width: 100px;
+    height: 100px;
+    border: 1px solid;
+    text-align: center;
+    background-color: #fff;
     padding-top:
     20px;
+}
+
+.heart{
+    color: #ff0000;
+    margin: 5px;
 }
