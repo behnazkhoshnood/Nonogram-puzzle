@@ -3,37 +3,100 @@ h6{
     text-align: center;
 }
 
-.inline{
-    display: inline;
+.nanogram{
+    padding-top: 5vh;
+    margin-left: 33vw;
+    margin-bottom: 10px;
 }
 
-div{
-    align-items: center;
-}
+div.contextmenu {
+    background: yellow;
+  }
 
-.lvl-2{
-    margin:auto 0;
-    margin-top: 15vh;
-    margin-left: 15vh;
-}
-
-.square{
-    height: 50px;
-    width: 50px;
+.black,
+.red,
+.green,
+.blue,
+.gray{
+    height: 30px;
+    width: 30px;
     border: 1px solid;
     text-align: center;
     padding-top: 3px;
 }
 
+.black{
+    background-color: #000000;
+}
+
+.red{
+    background-color: #ff0000;
+}
+
+.green{
+    background-color: #adff2f;
+}
+
+.blue{
+    background-color: #40a3c4;
+}
+
+.gray{
+    background-color: #bdb4b4;
+}
+
+.square{
+    height: 30px;
+    width: 30px;
+    border: 1px solid;
+    text-align: center;
+    background-color: #fff;
+}
+
 .head{
     height: 100px;
+    width: 30px;
 }
 
 .column{
     width: 100px;
+    height: 30px;
 }
 
 .lvl{
-    padding-top:
-    20px;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+#hp{
+    color: #48b648;
+}
+
+#map{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.ranking-header{
+    text-align: center;
+}
+
+table{
+    height: 380px;
+    width: 400px;
+ border: 1px solid;   
+}
+
+tr{
+    border: 1px solid;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
 }
