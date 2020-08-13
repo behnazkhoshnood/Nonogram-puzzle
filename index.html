@@ -11,19 +11,19 @@
 <body>
 <h2>You have <span id="hp">3</span> lives left</h2>
     <div class="container-fluid">
-  <div class="row nanogram">
-    <div class="square lvl">GOOD<br>LUCK</div>
-    <div class="square head">1<br>1</div>
-    <div class="square head">4<br>2</div>
-    <div class="square head">1<br>1<br>1<br>1</div>
-    <div class="square head">5</div>
-    <div class="square head">1<br>1</div>
-    <div class="square head">3</div>
-    <div class="square head">3<br>3<br>1</div>
-    <div class="square head">3<br>1<br>1<br>1</div>
-    <div class="square head">1<br>1<br>3</div>
+  <div class="row nanogram center">
+    <div class="lvl">GOOD<br>LUCK</div>
+    <div class="head">1<br>1</div>
+    <div class="head">4<br>2</div>
+    <div class="head">1<br>1<br>1<br>1</div>
+    <div class="head">5</div>
+    <div class="head">1<br>1</div>
+    <div class="head">3</div>
+    <div class="head">3<br>3<br>1</div>
+    <div class="head">3<br>1<br>1<br>1</div>
+    <div class="head">1<br>1<br>3</div>
     <div class="w-100"></div>
-    <div class="square column">3 1 1</div>
+    <div class="column">3 1 1</div>
 <button class="square black"></button>
 <button class="square black  "></button>
 <button class="square black "></button>
@@ -34,7 +34,7 @@
 <button class="square red  "></button>
 <button onclick="decrementHP()" class="square gray "></button>
     <div class="w-100"></div>
-    <div class="square column">1 5</div>
+    <div class="column">1 5</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square black"></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -45,7 +45,7 @@
 <button class="square red"></button>
 <button class="square red"></button>
     <div class="w-100"></div>
-    <div class="square column">1 3</div>
+    <div class="column">1 3</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square black"></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -56,7 +56,7 @@
 <button class="square red"></button>
 <button onclick="decrementHP()" class="square gray "></button>
     <div class="w-100"></div>
-    <div class="square column">3 1</div>
+    <div class="column">3 1</div>
 <button class="square black"></button>
 <button class="square black"></button>
 <button class="square black"></button>
@@ -67,7 +67,7 @@
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
     <div class="w-100"></div>
-    <div class="square column">0</div>
+    <div class="column">0</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -78,7 +78,7 @@
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
     <div class="w-100"></div>
-    <div class="square column">3 3</div>
+    <div class="column">3 3</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square green"></button>
@@ -89,7 +89,7 @@
 <button class="square blue"></button>
 <button class="square blue"></button>
     <div class="w-100"></div>
-    <div class="square column">1 1</div>
+    <div class="column">1 1</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -100,7 +100,7 @@
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
     <div class="w-100"></div>
-    <div class="square column">1 3</div>
+    <div class="column">1 3</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -111,7 +111,7 @@
 <button class="square blue"></button>
 <button class="square blue"></button>
     <div class="w-100"></div>
-    <div class="square column">1 1 1</div>
+    <div class="column">1 1 1</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square green"></button>
 <button onclick="decrementHP()" class="square gray "></button>
@@ -122,7 +122,7 @@
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square blue"></button>
     <div class="w-100"></div>
-    <div class="square column">3 3</div>
+    <div class="column">3 3</div>
 <button onclick="decrementHP()" class="square gray "></button>
 <button class="square green"></button>
 <button class="square green"></button>
@@ -134,11 +134,7 @@
 <button class="square blue"></button>
 </div>
 <div class="row">
-<div class="col-6">
-<div id="map"></div>
-  </div>
-  <div class="col-6">
-<h3 class="ranking-header">RANKING</h3>
+  <div class="col-12 col-md-6 center">
 <table>
       <tr>
         <th>RANK</th>
@@ -197,8 +193,11 @@
       </tr>
     </table>
 </div>
+<div class="col-12 col-md-6 center">
+<div id="map"></div>
   </div>
 </div>
+  </div>
     <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/maps.js"></script>

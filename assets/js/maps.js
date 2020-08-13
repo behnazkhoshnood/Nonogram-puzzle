@@ -7,20 +7,20 @@ function initMap() {
                 }
             });
 
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
             var locations = [
-                {lat: 52.5200,lng: 13.4050},//berlin
-                {lat: 51.5074,lng: 0.1278},//london
-                {lat: 59.3293,lng: 18.0686},//stockholm
-                {lat: 34.8021,lng: 38.9968},//syria
-                {lat: 29.5926,lng: 52.5836},//shiraz
-                {lat: 59.3293,lng: 18.0686},//stockholm
-                {lat: 29.5926,lng: 52.5836},//shiraz
-                {lat: 29.5926,lng: 52.5836},//shiraz
-                {lat: 29.5926,lng: 52.5836},//shiraz
-                {lat: 52.5200,lng: 13.4050},//berlin
-                {lat: 29.5926,lng: 52.5836} //shiraz
+                {lat: 52.5200,lng: 13.4050},//Berlin
+                {lat: 51.5074,lng: 0.1278},//London
+                {lat: 59.3293,lng: 18.0686},//Stockholm
+                {lat: 34.8021,lng: 38.9968},//Syria
+                {lat: 29.5926,lng: 52.5836},//Shiraz
+                {lat: 59.3293,lng: 18.0686},//Stockholm
+                {lat: 29.5926,lng: 52.5836},//Shiraz
+                {lat: 29.5926,lng: 52.5836},//Shiraz
+                {lat: 29.5926,lng: 52.5836},//Shiraz
+                {lat: 52.5200,lng: 13.4050},//Berlin
+                {lat: 29.5926,lng: 52.5836} //Shiraz
         ];
 
             var markers = locations.map(function(location, i) {

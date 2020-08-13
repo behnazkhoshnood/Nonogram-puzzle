@@ -1,8 +1,14 @@
- $("button").on("click", function () {
+$(document).ready(function(){
+    $("button").on("click", function () {
      $(this).removeClass("square");
+     
+     if($(this).css("background-color") == "#d8d8d8"){
+     }
+     
  });
- 
- function decrementHP() {
+})
+
+        function decrementHP() {
         var lives = document.getElementById("hp");
         var currentCount = lives.innerText;
 
