@@ -90,7 +90,8 @@ html{
 #map{
     height: 420px;
     width: 90%;
-    margin: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .ranking-header{
@@ -101,8 +102,8 @@ table{
     height: 420px;
     width: 90%;
  border: 1px solid;
- margin: 30px;
- margin-right: 0px;
+margin: 0 auto;
+margin-top: 30px;
 }
 
 tr{
