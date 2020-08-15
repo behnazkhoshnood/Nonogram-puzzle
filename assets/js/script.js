@@ -20,7 +20,7 @@
       }; 
       
 
-$("button").on("click", function () {
+$("div").on("click", function () {
     $(this).removeClass("square");
  });
  
