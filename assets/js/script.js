@@ -1,14 +1,4 @@
-$(document).ready(function(){
-    $("button").on("click", function () {
-     $(this).removeClass("square");
-     
-     if($(this).css("background-color") == "#d8d8d8"){
-     }
-     
- });
-})
-
-        function decrementHP() {
+ function decrementHP() {
         var lives = document.getElementById("hp");
         var currentCount = lives.innerText;
 
@@ -28,4 +18,14 @@ $(document).ready(function(){
             lives.style.color = "red";
         }
       }; 
+      
+
+$("button").on("click", function () {
+    $(this).removeClass("square");
+ });
+ 
+$(".play").on("click", function () {
+   decrementHP()
+});
+
 
