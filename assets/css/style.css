@@ -1,13 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200;1,400;1,600;1,700;1,900&family=Sriracha&display=swap");
+
+/* -------------------------------------------------------------------general */
+body,
+html {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+footer {
+    overflow-y: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Sriracha", cursive;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+label,
+h4 {
+    font-family: "Sriracha", cursive;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+h5,
+h6,
+input {
+    font-family: "Sriracha", cursive;
+    text-align: left;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: "Sriracha", cursive;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+a {
+    color: #fafafa;
+}
+
+strong {
+    font-weight: 900;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+}
+
+em {
+    font-weight: 800;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.small {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
 h2,
 h6{
+    font-family: "Sriracha", cursive;
     text-align: center;
     margin: 10px;
 }
 
-.center{
-    text-align: center;
-    margin: 0 auto;
+.center {
+  text-align: center;
+  margin: 0 auto;
 }
+
 
 .container-fluid{
     padding-top: 25px;
@@ -15,7 +120,6 @@ h6{
 }
 
 div{
-    background-color: #ebe2e2;
     border-radius: 8px;
 }
 
@@ -64,7 +168,7 @@ header {
     padding-top: 22px;
     display: block;
     color: #fafafa;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 .menuitem span {
@@ -73,7 +177,7 @@ header {
     padding-top: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     font-family: "Sriracha", cursive;
     word-spacing: 4px;
@@ -84,13 +188,26 @@ header {
     height: 120px;
 }
 
+/* --------------------------------------------------------------------Colors */
+body{
+    background-color: #fafafa;
+}
 
-/* -----------------------------------------------------Nanogram style */
+.ui-menu-color-nanogram,
+.nanogram-footer,
+.footer-row,
+.footer-parts,
+.games-items,
+.games{
+    background-color: #1982C4;
+}
 
-.nanogram{
-    max-width: 90%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+.ui-menu-color-rules{
+    background-color:  #76AB21;
+}
+
+.ui-menu-color-ranking{
+    background-color: #896BB3;
 }
 
 .black{
@@ -113,6 +230,20 @@ header {
     background-color: #13e6f5
 }
 
+
+.square{
+    background-color: #fff;
+}
+
+/* -----------------------------------------------------Nanogram style */
+
+.nanogram{
+    max-width: 90%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+
 .black,
 .red,
 .green,
@@ -123,9 +254,6 @@ header {
     border: 1px solid;
 }
 
-.square{
-    background-color: #fff;
-}
 
 
 .head{
@@ -158,10 +286,11 @@ header {
 /* --------------------------------------------------------google map ranking*/
 
 #map{
-    height: 420px;
+    height: 560px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .ranking-header{
@@ -169,11 +298,12 @@ header {
 }
 
 table{
-    height: 420px;
+    height: 560px;
     width: 90%;
  border: 1px solid;
 margin: 0 auto;
-margin-top: 30px;
+margin-top: 50px;
+margin-bottom: 25px;
 }
 
 tr{
@@ -187,6 +317,153 @@ th{
 td{
     text-align: center;
 }
+
+/* --------------------------------------------------------------------footer */
+
+footer {
+    color: #fafafa;
+}
+
+.footer-parts {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.contact-note {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.contact-btn {
+    border-radius: 50px;
+    background-color: #FFBE0A;
+    height: 60px;
+    min-width: 120px;
+    border-color: #967c35;
+    margin: 0 auto;
+    margin-top: 25px;
+    bottom: 30px;
+    font-size: 17px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in-passworld,
+#sign-in-email {
+    background-color: #d1bbd4;
+    border-width: 3px;
+    text-align: center;
+}
+
+#sign-in-passworld:focus,
+#sign-in-email:focus {
+    border-color: #cc9600;
+    border-width: 3px;
+    background-color: #fafafa;
+}
+
+.btn-primary:hover {
+    color: #fafafa;
+    background-color:  #cc9600;
+    border-color:  #cc9600;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #CC9600;
+    border-color:  #CC9600;
+}
+
+.games{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.games-items,
+.support-note{
+    margin:0 auto;
+    margin-top:32px;
+    max-width: 80%;
+}
+
+.fa{
+    font-size: 25px;
+}
+
+.contacts {
+    height: 100%;
+}
+
+.contact-items {
+    height: 60%;
+}
+
+.contacts p {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 350px;
+    height: 40px;
+    padding-left: 17px;
+    font-size: 17px;
+}
+
+.contacts i {
+    width: 1px;
+    height: 35px;
+    font-size: 25px;
+    padding-left: 0px;
+}
+
+.social-links {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.social-links li {
+    padding-top: 20px;
+padding-right: 10%;
+    padding-left: 0px;
+}
+
+
+.social-links a i {
+    width: 50px;
+    height: 50px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.social-links li a i:hover {
+    background: #686464;
+}
+
+.general-sub {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.footer-content {
+    padding-top: 10px;
+}
+
+form,
+.form-control {
+    max-width: 80%;
+}
+
 
 /* -----------------------------------------------------medias*/
 
@@ -237,7 +514,11 @@ td{
 .column{
     padding-top: 20px;
 }
-  
+
+.menuitem span{
+    font-size: 20px;
+}
+
 }
 
 @media only screen and (min-width:1101px) and (max-width: 1500px) {
@@ -262,6 +543,11 @@ td{
 .column{
      padding-top: 30px;
 }
+
+.menuitem span{
+    font-size: 20px;
+}
+
   
 }
 
@@ -294,6 +580,10 @@ font-size: 19px;
 }
 
 .lvl{
+    font-size: 20px;
+}
+
+.menuitem span{
     font-size: 20px;
 }
   
