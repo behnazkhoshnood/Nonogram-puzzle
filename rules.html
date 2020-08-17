@@ -21,14 +21,14 @@
 		<div class="no-gutters">
 			<div class="col">
 				<ul id="nav" class="list-inline menucontainer">
-					<li class="col-4 ui-menu-color-nanogram list-inline-item menuitem">
-						<a href="index.html" class="hvr-sweep-to-bottom">
-							<span>Nanogram</span>
-						</a>
-					</li>
 					<li class="col-4 ui-menu-color-rules list-inline-item menuitem">
 						<a href="rules.html" class="hvr-sweep-to-bottom">
 							<span>Rules</span>
+						</a>
+					</li>
+                    <li class="col-4 ui-menu-color-nanogram list-inline-item menuitem">
+						<a href="index.html" class="hvr-sweep-to-bottom">
+							<span>Nanogram</span>
 						</a>
 					</li>
 					<li class="col-4 ui-menu-color-ranking list-inline-item menuitem">
@@ -40,42 +40,56 @@
 			</div>
 		</div>
 	</header>
-	<h2> HOW TO PLAY: </h2>
-	<h6>By switching the button shown here </h6>
-	<div class="btn-group btn-group-toggle" data-toggle="buttons">
-		<label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" checked> Color
-  </label>
-		<label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2"> Blank
-  </label>
-	</div>
-	<h6>you can switch between coloring or leaving the square.<br>
-    Every number represents a sequence. for example:</h6>
-			<span>5</span>
-            <div class="btn-toolbar col-9" role="toolbar" aria-label="Toolbar with button groups">
-				<div class="btn-group mr-2" role="group" aria-label="First group">
-					<button type="button" class="btn btn-secondary">Color</button>
-					<button type="button" class="btn btn-secondary">Color</button>
-					<button type="button" class="btn btn-secondary">Color</button>
-					<button type="button" class="btn btn-secondary">Color</button>
-					<button type="button" class="btn btn-secondary">Color</button>
-				</div>
-	<h6>This means all the 5 squares need to be colored.</h6>
-			<h6>If there is more than one number, there must be at least one blank square between each sequence. For
-			example:</h6>
-			<span>2 - 2</span>
-            <div class="btn-group mr-2 col-9" role="group" aria-label="First group">
-				<button type="button" class="btn btn-secondary">Color</button>
-				<button type="button" class="btn btn-secondary">Color</button>
-				<button type="button" class="btn btn-primary">blank</button>
-				<button type="button" class="btn btn-secondary">Color</button>
-				<button type="button" class="btn btn-secondary">Color</button>
-			</div>
-		</div>
-		<h6>In this case there should be at least one black square between the sequences.</h6>
+	<h2> HOW TO Win: </h2>
+	<h6>By avoiding to click on the gray boxes and find all the colorfull boxes before you run out of lives. you can right-click on the gray boxes to rule them out.</h6>
+    <h2>How to play</h2>
+	<h6>Every number on the corner boxes represents a sequence. for example:</h6>
+		<h3>You have <span id="hp">3</span> lives left</h3>
+	<div class="container-fluid">
+		<div class=" row nanogram-rules center">
+			<div class="lvl-learn rules">How<br>To Play</div>
+            <div class="lvl">Good<br>Luck</div>
+				<div class="head">1</div>
+					<div class="head">2</div>
+						<div class="head">1<br>2</div>
+							<div class="head">2</div>
+							<div class="head">1</div>
+											<div class="w-100"></div>
+                                            <div class="column small rules">Just 1 box is colored in this column</div>
+											<div class="column">1<br></div>
+                                            		<div class="square gray play"></div>
+                                                    		<div class="square gray play"></div>
+											<div class="square red"></div>
+											<div class="square gray play"></div>
+											<div class="square gray play"></div>
+											<div class="w-100"></div>
+                                                    <div class="column small rules">2 seperate colored boxes are in this column</div>
+											<div class="column">1 1</div>
+                                            		<div class="square gray play"></div>
+											<div class="square red"></div>
+                                            		<div class="square gray play"></div>
+											<div class="square red"></div>
+													<div class="square gray play"></div>
+											<div class="w-100"></div>
+                                            <div class="column small rules">5 boxes next to eachother are colored in this column</div>
+											<div class="column">5</div>
+											<div class="square blue"></div>
+											<div class="square blue"></div>
+											<div class="square red"></div>
+											<div class="square blue"></div>
+                                            <div class="square blue"></div>
+											<div class="w-100"></div>
+                                            <div class="column small rules">Just 1 box is colored in this column</div>
+											<div class="column">1</div>
+											<div class="square gray play"></div>
+											<div class="square gray play"></div>
+                                            <div class="square green"></div>
+											<div class="square gray play"></div>
+											<div class="square gray play"></div>
+										</div>
+									</div>	
         									<!--                              footer -->
-									<footer class="nanogram-footer">
+									<footer class="rules-footer">
 										<div class="row footer-row">
                                         
 											<!--                     support -->
