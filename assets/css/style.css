@@ -303,6 +303,7 @@ body{
 }
 
 .rules{
+    border-radius: 1px;
         width: 36%;
     height: 60px;
     border: 1px solid;
@@ -313,7 +314,7 @@ body{
     padding-top: 20px;
     width: 36%;
     height: 100px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     border: 1px solid;
 }
