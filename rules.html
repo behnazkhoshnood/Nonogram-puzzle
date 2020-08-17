@@ -11,11 +11,19 @@
 		type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
 		type="text/css" />
-        <!--Load jasmin framwork-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js" integrity="sha512-dqL4nYnbiMiNNy/V2zRK55QXSRVyu26KCuGoL8Zf5lDfKRRf8pBFW8RXe8at36QlB8s8bnOjKP6b5YTalHO6wQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js" integrity="sha512-bqig44hBpNuvBzxsqbHiqwRximGm4UfJAvOeNQHjB7++0D2u/3bcw4ZwmVsqrooii2UJ91oDI/6aANdp3BwcQQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js" integrity="sha512-igPP1Xd0hsvXVZGyfIYeUD779NLEA1Sj/5ts2C/e/22zeUqR6ehA7M/nNLuONalznkHQkGPBESNwzGpwBQD60g==" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css" integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q==" crossorigin="anonymous" />
+	<!--Load jasmin framwork-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"
+		integrity="sha512-dqL4nYnbiMiNNy/V2zRK55QXSRVyu26KCuGoL8Zf5lDfKRRf8pBFW8RXe8at36QlB8s8bnOjKP6b5YTalHO6wQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js"
+		integrity="sha512-bqig44hBpNuvBzxsqbHiqwRximGm4UfJAvOeNQHjB7++0D2u/3bcw4ZwmVsqrooii2UJ91oDI/6aANdp3BwcQQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"
+		integrity="sha512-igPP1Xd0hsvXVZGyfIYeUD779NLEA1Sj/5ts2C/e/22zeUqR6ehA7M/nNLuONalznkHQkGPBESNwzGpwBQD60g=="
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"
+		integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q=="
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Nanogram puzzle</title>
 </head>
@@ -31,7 +39,7 @@
 							<span>Rules</span>
 						</a>
 					</li>
-                    <li class="col-4 ui-menu-color-nanogram list-inline-item menuitem">
+					<li class="col-4 ui-menu-color-nanogram list-inline-item menuitem">
 						<a href="nanogram.html" class="hvr-sweep-to-bottom">
 							<span>Nanogram</span>
 						</a>
@@ -46,163 +54,160 @@
 		</div>
 	</header>
 	<h2> HOW TO Win: </h2>
-	<h6>By avoiding to click on the gray boxes and find all the colorfull boxes before you run out of lives. you can right-click on the gray boxes to rule them out.</h6>
-    <h2>How to play</h2>
+	<h6>By avoiding to click on the gray boxes and find all the colorfull boxes before you run out of lives. you can
+		right-click on the gray boxes to rule them out.</h6>
+	<h2>How to play</h2>
 	<h6>Every number on the corner boxes represents a sequence. for example:</h6>
-		<h3>You have <span id="hp">3</span> lives left</h3>
+	<h3>You have <span id="hp">3</span> lives left</h3>
 	<div class="container-fluid">
 		<div class=" row nanogram-rules center">
 			<div class="lvl-learn rules">How<br>To Play</div>
-            <div class="lvl">Good<br>Luck</div>
-				<div class="head">1</div>
+				<div class="lvl">Good<br>Luck</div>
+					<div class="head">1</div>
 					<div class="head">2</div>
-						<div class="head">1<br>2</div>
-							<div class="head">2</div>
-							<div class="head">1</div>
-											<div class="w-100"></div>
-                                            <div class="column small rules"> Just 1 box is colored in this column</div>
-											<div class="column">1<br></div>
-                                            		<div class="square gray play"></div>
-                                                    		<div class="square gray play"></div>
-											<div class="square red"></div>
-											<div class="square gray play"></div>
-											<div class="square gray play"></div>
-											<div class="w-100"></div>
-                                                    <div class="column small rules"> 2 seperate colored boxes are in this column</div>
-											<div class="column">1 1</div>
-                                            		<div class="square gray play"></div>
-											<div class="square red"></div>
-                                            		<div class="square gray play"></div>
-											<div class="square red"></div>
-													<div class="square gray play"></div>
-											<div class="w-100"></div>
-                                            <div class="column small rules">all boxes in this column are colored</div>
-											<div class="column">5</div>
-											<div class="square blue"></div>
-											<div class="square blue"></div>
-											<div class="square red"></div>
-											<div class="square blue"></div>
-                                            <div class="square blue"></div>
-											<div class="w-100"></div>
-                                            <div class="column small rules">Just 1 box is colored in this column</div>
-											<div class="column">1</div>
-											<div class="square gray play"></div>
-											<div class="square gray play"></div>
-                                            <div class="square green"></div>
-											<div class="square gray play"></div>
-											<div class="square gray play"></div>
-										</div>
-									</div>	
-                                    <h3>Now feel in the rows with the same consept.</h3>
-        									<!--                              footer -->
-									<footer class="rules-footer">
-										<div class="row footer-row">
-                                        
-											<!--                     support -->
-											<div class="col-12 col-md-4 footer-parts">
-												<h3 class="uppercase general-sub">Support</h3>
-												<p class="support-note center">
-													You can contact us here.
-												</p>
-												<button type="button col-12 center" class="btn btn-primary contact-btn" data-toggle="modal" data-target="#support">
+					<div class="head">1<br>2</div>
+						<div class="head">2</div>
+						<div class="head">1</div>
+						<div class="w-100"></div>
+						<div class="column small rules"> Just 1 box is colored in this column</div>
+						<div class="column">1<br></div>
+							<div class="square gray play"></div>
+							<div class="square gray play"></div>
+							<div class="square red"></div>
+							<div class="square gray play"></div>
+							<div class="square gray play"></div>
+							<div class="w-100"></div>
+							<div class="column small rules"> 2 seperate colored boxes are in this column</div>
+							<div class="column">1 1</div>
+							<div class="square gray play"></div>
+							<div class="square red"></div>
+							<div class="square gray play"></div>
+							<div class="square red"></div>
+							<div class="square gray play"></div>
+							<div class="w-100"></div>
+							<div class="column small rules">all boxes in this column are colored</div>
+							<div class="column">5</div>
+							<div class="square blue"></div>
+							<div class="square blue"></div>
+							<div class="square red"></div>
+							<div class="square blue"></div>
+							<div class="square blue"></div>
+							<div class="w-100"></div>
+							<div class="column small rules">Just 1 box is colored in this column</div>
+							<div class="column">1</div>
+							<div class="square gray play"></div>
+							<div class="square gray play"></div>
+							<div class="square green"></div>
+							<div class="square gray play"></div>
+							<div class="square gray play"></div>
+						</div>
+					</div>
+					<h3>Now feel in the rows with the same consept.</h3>
+					<!--                              footer -->
+					<footer class="rules-footer">
+						<div class="row footer-row">
+
+							<!--                     support -->
+							<div class="col-12 col-md-4 footer-parts">
+								<h3 class="uppercase general-sub">Support</h3>
+								<p class="support-note center">
+									You can contact us here.
+								</p>
+								<button type="button col-12 center" class="btn btn-primary contact-btn" data-toggle="modal" data-target="#support">
                         Contact Us
                     </button>
-											</div>
-											<!--                   More-games-->
-											<div class="col-12 col-md-4 footer-parts">
-												<h3 class="uppercase general-sub">More games</h3>
-												<div class="More-games">
-													<div class="games-items row">
-														<div
-															class="col-6  center games">
-															<i class="fa fa-gamepad" aria-hidden="true">
+							</div>
+							<!--                   More-games-->
+							<div class="col-12 col-md-4 footer-parts">
+								<h3 class="uppercase general-sub">More games</h3>
+								<div class="More-games">
+									<div class="games-items row">
+										<div class="col-6  center games">
+											<i class="fa fa-gamepad" aria-hidden="true">
                                     <span class="sr-only">Suduku</span>
                                 </i>
-															<p>Suduku</p>
-														</div>
-														<div
-															class="col-6 center games">
-															<i class="fa fa-phone" aria-hidden="true">
+											<p>Suduku</p>
+										</div>
+										<div class="col-6 center games">
+											<i class="fa fa-phone" aria-hidden="true">
                                     <span class="sr-only">FuzzBuzz</span>
                                 </i>
-															<p>FuzzBuzz</p>
-														</div>
-														<div
-															class="col-6 center games">
-															<i class="fa fa-bug" aria-hidden="true">
+											<p>FuzzBuzz</p>
+										</div>
+										<div class="col-6 center games">
+											<i class="fa fa-bug" aria-hidden="true">
                                     <span class="sr-only">Hokm</span>
                                 </i>
-															<p>Domino</p>
-														</div>
-                                                        <div
-															class="col-6 center games">
-															<i class="fa fa-handshake-o" aria-hidden="true">
+											<p>Domino</p>
+										</div>
+										<div class="col-6 center games">
+											<i class="fa fa-handshake-o" aria-hidden="true">
                                     <span class="sr-only">Hokm</span>
                                 </i>
-															<p>Hokm</p>
-														</div>
-													</div>
-                                                    </div>
-                                                    </div>
-											<!--                      social -->
-											<div class="col-12 col-md-4 footer-parts">
-												<h3 class="uppercase general-sub">Social</h3>
-												<ul class="list-inline-item social-links row">
-													<li class="list-inline-item col-4">
-														<a href="https://www.facebook.com/" target="_blank">
-															<i class="fa fa-facebook col-12" aria-hidden="true"></i>
-															<span class="sr-only">Facebook</span>
-														</a>
-													</li>
-													<li class="list-inline-item col-4">
-														<a href="https://www.pinterest.se/" target="_blank">
-															<i class="fa fa-pinterest col-12" aria-hidden="true"></i>
-															<span class="sr-only">Pinterest</span>
-														</a>
-													</li>
-													<li class="list-inline-item col-4">
-														<a href="https://www.instagram.com/" target="_blank">
-															<i class="fa fa-instagram col-12" aria-hidden="true"></i>
-															<span class="sr-only">Instagram</span>
-														</a>
-													</li>
-													<li class="list-inline-item col-4">
-														<a href="https://twitter.com/" target="_blank">
-															<i class="fa fa-twitter col-12" aria-hidden="true"></i>
-															<span class="sr-only">Twitter</span>
-														</a>
-													</li>
-													<li class="list-inline-item col-4">
-														<a href="https://www.whatsapp.com/" target="_blank">
-															<i class="fa fa-whatsapp col-12" aria-hidden="true"></i>
-															<span class="sr-only">Whatsapp</span>
-														</a>
-													</li>
-													<li class="list-inline-item col-4">
-														<a href="telegram.org" target="_blank">
-															<i class="fa fa-telegram col-12" aria-hidden="true"></i>
-															<span class="sr-only">Telegram</span>
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>	
-									</footer>
-                                     <!--Load tests-->
-        <script type="javascript/text" src="specs/specs.js"></script>
-                                    
-									<!--                                  js -->
-									<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-										integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-										crossorigin="anonymous"></script>
-									<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-										integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-										crossorigin="anonymous"></script>
-									<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-										integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-										crossorigin="anonymous"></script>
-									<script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
-									<script type="text/javascript" src="assets/js/script.js"></script>
+											<p>Hokm</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--                      social -->
+							<div class="col-12 col-md-4 footer-parts">
+								<h3 class="uppercase general-sub">Social</h3>
+								<ul class="list-inline-item social-links row">
+									<li class="list-inline-item col-4">
+										<a href="https://www.facebook.com/" target="_blank">
+											<i class="fa fa-facebook col-12" aria-hidden="true"></i>
+											<span class="sr-only">Facebook</span>
+										</a>
+									</li>
+									<li class="list-inline-item col-4">
+										<a href="https://www.pinterest.se/" target="_blank">
+											<i class="fa fa-pinterest col-12" aria-hidden="true"></i>
+											<span class="sr-only">Pinterest</span>
+										</a>
+									</li>
+									<li class="list-inline-item col-4">
+										<a href="https://www.instagram.com/" target="_blank">
+											<i class="fa fa-instagram col-12" aria-hidden="true"></i>
+											<span class="sr-only">Instagram</span>
+										</a>
+									</li>
+									<li class="list-inline-item col-4">
+										<a href="https://twitter.com/" target="_blank">
+											<i class="fa fa-twitter col-12" aria-hidden="true"></i>
+											<span class="sr-only">Twitter</span>
+										</a>
+									</li>
+									<li class="list-inline-item col-4">
+										<a href="https://www.whatsapp.com/" target="_blank">
+											<i class="fa fa-whatsapp col-12" aria-hidden="true"></i>
+											<span class="sr-only">Whatsapp</span>
+										</a>
+									</li>
+									<li class="list-inline-item col-4">
+										<a href="telegram.org" target="_blank">
+											<i class="fa fa-telegram col-12" aria-hidden="true"></i>
+											<span class="sr-only">Telegram</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+
+					<!--                                  js -->
+					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+						crossorigin="anonymous"></script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+						crossorigin="anonymous"></script>
+					<script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
+					<script type="text/javascript" src="assets/js/script.js"></script>
+                    					<!--Load tests-->
+					<script type="javascript/text" src="specs/specs.js"></script>
 </body>
 
 </html>
