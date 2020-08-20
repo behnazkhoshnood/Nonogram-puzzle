@@ -221,7 +221,6 @@ body{
 }
 
 
-
 .black{
        background-color: #000; 
 }
@@ -242,9 +241,16 @@ body{
     background-color: #13e6f5
 }
 
+.orange{
+    color: #ff8c00;
+};
 
 .square{
     background-color: #fff;
+}
+
+#hp{
+    color: #3fa83f;
 }
 
 /* -----------------------------------------------------Nanogram style */
@@ -317,10 +323,6 @@ body{
     font-size: 15px;
     font-weight: bold;
     border: 1px solid;
-}
-
-#hp{
-    color: #48b648;
 }
 
 /* --------------------------------------------------------google map ranking*/
