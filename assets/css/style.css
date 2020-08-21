@@ -33,29 +33,13 @@ footer {
 
 h1,
 h2,
-h3 {
-    font-family: "Sriracha", cursive;
-    text-align: center;
-    font-weight: 600;
-        margin-top: 55px;
-    margin-bottom: 40px;
-}
-
-label,
-h4 {
-    font-family: "Sriracha", cursive;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-h5,
-h6,
+h3, 
+h4,
 input {
     font-family: "Sriracha", cursive;
-    text-align: left;
-    font-weight: 600;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 40px;
 }
 
 .btn {
@@ -66,10 +50,15 @@ input {
     font-size: 25px;
 }
 
+h5,
+h6, 
 p {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
 ul {
@@ -84,32 +73,14 @@ a {
     color: #fafafa;
 }
 
-strong {
-    font-weight: 900;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
-}
-
-em {
-    font-weight: 800;
-    font-family: "Source Sans Pro", sans-serif;
+a:hover {
+    color: #e0d4d4;
 }
 
 .small {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
     font-size: 10px;
-}
-
-
-h2,
-h6{
-font-family: "Sriracha", cursive;
-    text-align: center;
-    max-width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 .center {
@@ -241,10 +212,6 @@ body{
     background-color: #13e6f5
 }
 
-.orange{
-    color: #ff8c00;
-};
-
 .square{
     background-color: #fff;
 }
@@ -342,10 +309,10 @@ body{
 table{
     height: 560px;
     width: 90%;
- border: 1px solid;
-margin: 0 auto;
-margin-top: 50px;
-margin-bottom: 25px;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 tr{
@@ -371,7 +338,7 @@ footer {
     max-width: 80%;
 }
 
-.contact-note {
+.support-note {
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px;
     padding-top: 0;
@@ -381,7 +348,7 @@ footer {
     font-size: 17px;
 }
 
-.contact-btn {
+.support-btn {
     border-radius: 50px;
     background-color: #FFBE0A;
     height: 60px;
@@ -396,19 +363,6 @@ footer {
   align-items: center;
 }
 
-#sign-in-passworld,
-#sign-in-email {
-    background-color: #d1bbd4;
-    border-width: 3px;
-    text-align: center;
-}
-
-#sign-in-passworld:focus,
-#sign-in-email:focus {
-    border-color: #cc9600;
-    border-width: 3px;
-    background-color: #fafafa;
-}
 
 .btn-primary:hover {
     color: #fafafa;
@@ -438,28 +392,6 @@ footer {
     font-size: 25px;
 }
 
-.contacts {
-    height: 100%;
-}
-
-.contact-items {
-    height: 60%;
-}
-
-.contacts p {
-    font-family: "Source Sans Pro", sans-serif;
-    width: 350px;
-    height: 40px;
-    padding-left: 17px;
-    font-size: 17px;
-}
-
-.contacts i {
-    width: 1px;
-    height: 35px;
-    font-size: 25px;
-    padding-left: 0px;
-}
 
 .social-links {
     margin: 0 auto;
@@ -484,7 +416,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #686464;
+    color: #e0d4d4;
 }
 
 .general-sub {
@@ -496,16 +428,6 @@ footer {
     font-size: 26px;
     font-weight: 600;
 }
-
-.footer-content {
-    padding-top: 10px;
-}
-
-form,
-.form-control {
-    max-width: 80%;
-}
-
 
 /* -----------------------------------------------------medias*/
 
@@ -590,10 +512,15 @@ form,
 }
 
 .column{
-     padding-top: 30px;
+    padding-top: 30px;
 }
 
 .menuitem span{
+    font-size: 20px;
+}
+
+.lvl,
+.lvl-learn{
     font-size: 20px;
 }
 
@@ -602,9 +529,9 @@ form,
 
 @media only screen and (min-width:1501px){
     
-    .nanogram{
-        max-width: 70%;
-    }
+.nanogram{
+    max-width: 70%;
+}
     
 .black,
 .red,
@@ -628,7 +555,8 @@ padding-top: 30px;
 font-size: 19px;
 }
 
-.lvl{
+.lvl,
+.lvl-learn{
     font-size: 20px;
 }
 

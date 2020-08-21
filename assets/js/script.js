@@ -1,14 +1,5 @@
 
 $(document).ready(function () {
-        //                                                    winning rules
-        if ($(".not-clicked-color").length == 0){
-            alert("Congradulations. You have won the game");
-            $(".square").removeClass("square");
-        
-        setTimeout(function () {
-        location.reload(true);
-      }, 500);
-    }
     
     //                                                       loosing HP rules
     function decrementHP() {
@@ -35,13 +26,32 @@ $(document).ready(function () {
 //                                                       on left click rules
 
 
-    $("div").on("click", function () {
+    $(".square").on("click", function () {
         $(this).removeClass("square").removeClass("not-clicked-color").addClass("clicked-color").unbind("click").unbind("contextmenu");
     });
 
     $(".gray").click(function() {
         decrementHP();
     });
+    
+ //                                                            winning rules
+    $(".square").on("mousedown", function () {
+
+        if ($(".not-clicked-color").length == 1) {
+            $(".square").removeClass("square");
+            }
+     });   
+         
+    $(".square").on("mouseup", function () {   
+        
+        if ($(".not-clicked-color").length == 1) {
+            alert("Congradulations. You have won the game");
+        setTimeout(function () {
+            location.reload(true);
+        }, 500);
+    }
+    }); 
+
 //                                                       on right click rules
     $(".square").on("contextmenu", function () {
         if ($(this).hasClass("gray")) {
