@@ -6,6 +6,7 @@ function initMap() {
             lng: 30.4050
         }
     });
+    
 
     var labels = ["Alex", "Rohit", "Behnaz", "Garo", "Mahsa", "Eric", "Ali", "Behrooz", "Jack", "Fariba"];
  
@@ -21,30 +22,30 @@ function initMap() {
         {lat: 52.5200, lng: 13.4055},//Berlin
         {lat: 29.5922, lng: 52.5835} //Shiraz
     ];
+     
     
-    
-    
-    var markers = locations.map(function (location, i) {   
+    var markers = locations.map(function (location, i) { 
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length]
-        });    
+        }); 
     });
-    
-$("table").find('tr').each(function(idx) {
-  var rowNumber=[1,2,3,4,5,6,7,8,9,10];
-  $(this).on('click', function() {  
-        map.setCenter(labels[i].getPosition());
-  });
-});
-
-    
-    
+        
 
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
+      
     
-    
+    $("tr").on("click", function(){
+         var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: {
+            lat: 46.5200,
+            lng: 30.4050
+        }
+    });
+    });
+       
 }
-
+     
