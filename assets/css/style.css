@@ -295,11 +295,11 @@ body{
 /* --------------------------------------------------------google map ranking*/
 
 #map{
-    height: 560px;
+    height: 460px;
     width: 90%;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .ranking-header{
@@ -307,11 +307,11 @@ body{
 }
 
 table{
-    height: 560px;
+    height: 460px;
     width: 90%;
     border: 1px solid;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 

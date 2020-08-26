@@ -37,14 +37,11 @@ function initMap() {
     });
       
     
-    $("tr").on("click", function(){
-         var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10,
-        center: {
-            lat: 46.5200,
-            lng: 30.4050
-        }
-    });
+    $("tr").on("click", function(location, i){
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        }); 
     });
        
 }
