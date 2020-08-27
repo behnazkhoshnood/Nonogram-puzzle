@@ -34,15 +34,15 @@ footer {
 h1,
 h2,
 h3, 
-h4,
-input {
+h4 {
     font-family: "Sriracha", cursive;
     text-align: center;
     margin-top: 55px;
     margin-bottom: 40px;
 }
 
-.btn {
+.btn,
+input {
     font-family: "Sriracha", cursive;
     text-align: center;
     font-weight: 600;
@@ -222,19 +222,40 @@ body{
 
 /* -----------------------------------------------------Nanogram style */
 
+#hint-btn{
+    width: 80px;
+    height: 70px;
+    background-color: #64882b;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    color: #fafafa;
+    padding-top: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#hint-btn:hover{
+    background-color: #6f9630;
+}
+
+#hint-note{
+    margin-bottom: 15px;
+}
+
 .nanogram-rules{
     width: 100%;
     margin: 0 auto;
-      padding-bottom: 30px;
-    margin-bottom: 30px;
+      padding-bottom: 15px;
+    margin-bottom: 15px;
 
 }
 
 .nanogram{
     margin: 0 auto;
     max-width: 90%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 

@@ -5,14 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	    <!--css files-->
+	<!--css files-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
 		type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Nanogram puzzle</title>
 </head>
 <!--                                                           header -->
@@ -115,55 +115,56 @@
 				<p class="support-note center">
 					You can contact us here.
 				</p>
-				<button type="button col-12 center" class="btn btn-primary support-btn" data-toggle="modal" data-target="#support">
+				<button type="button" class="btn btn-primary support-btn" data-toggle="modal" data-target="#support-btn">
                         Contact Us
                     </button>
 			</div>
 			<!--                   More-games-->
 			<div class="col-12 col-md-4 footer-parts">
-												<h3 class="uppercase general-sub">More games</h3>
-												<div class="More-games">
-													<div class="games-items row">
-														<div class="col-6  center games">
-                                                        <a href="https://www.google.com/aclk?sa=L&ai=DChcSEwicotqCiKzrAhUEk7IKHfWDBRQYABAAGgJscg&sig=AOD64_1L6K2okydb9N3ijugVfESsDoVs-g&q&adurl&ved=2ahUKEwif5NGCiKzrAhVwoosKHVPOB4oQ0Qx6BAgfEAE" target="_BLANK">
-															<i class="fa fa-gamepad" aria-hidden="true">
+				<h3 class="uppercase general-sub">More games</h3>
+				<div class="More-games">
+					<div class="games-items row">
+						<div class="col-6  center games">
+							<a href="https://www.google.com/aclk?sa=L&ai=DChcSEwicotqCiKzrAhUEk7IKHfWDBRQYABAAGgJscg&sig=AOD64_1L6K2okydb9N3ijugVfESsDoVs-g&q&adurl&ved=2ahUKEwif5NGCiKzrAhVwoosKHVPOB4oQ0Qx6BAgfEAE"
+								target="_BLANK">
+								<i class="fa fa-gamepad" aria-hidden="true">
                                     <span class="sr-only">Suduku</span>
                                 </i>
-                                </a>
-															<p>Suduku</p>
-														</div>
-                                                        
-                                                        
-														<div class="col-6 center games">
-                                                        <a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank">
-															<i class="fa fa-chain-broken" aria-hidden="true">
+							</a>
+							<p>Suduku</p>
+						</div>
+
+
+						<div class="col-6 center games">
+							<a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank">
+								<i class="fa fa-chain-broken" aria-hidden="true">
                                     <span class="sr-only">FuzzBuzz</span>
                                 </i>
-                                                        </a>
-															<p>FuzzBuzz</p>
-														</div>
-                                                        
-                                                        
-														<div class="col-6 center games">
-															<a href="https://en.wikipedia.org/wiki/Dominoes" target="_blank">
-                                                            <i class="fa fa-th-large" aria-hidden="true">
+							</a>
+							<p>FuzzBuzz</p>
+						</div>
+
+
+						<div class="col-6 center games">
+							<a href="https://en.wikipedia.org/wiki/Dominoes" target="_blank">
+								<i class="fa fa-th-large" aria-hidden="true">
                                     <span class="sr-only">Dominoes</span>
                                 </i>
-															</a>
-															<p>Domino</p>
-														</div>
-                                                        
-														<div class="col-6 center games">
-                                                        <a href="https://www.pagat.com/whist/hokm.html" target="_blank">
-															<i class="fa fa-handshake-o" aria-hidden="true">
+							</a>
+							<p>Domino</p>
+						</div>
+
+						<div class="col-6 center games">
+							<a href="https://www.pagat.com/whist/hokm.html" target="_blank">
+								<i class="fa fa-handshake-o" aria-hidden="true">
                                     <span class="sr-only">Hokm</span>
                                 </i>
-                                                        </a>
-															<p>Hokm</p>
-														</div>
-													</div>
-												</div>
-											</div>
+							</a>
+							<p>Hokm</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!--                      social -->
 			<div class="col-12 col-md-4 footer-parts">
 				<h3 class="uppercase general-sub">Social</h3>
@@ -208,6 +209,53 @@
 			</div>
 		</div>
 	</footer>
+	<!--                                                               modal -->
+	<div class="modal" tabindex="-1" role="dialog" id="support-btn">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title center">
+						Please Sign Up / Sign in and follow your loyalty chart.
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="support-email">Email address</label>
+							<input type="email" class="form-control" placeholder="email@example.com" id="support-email" aria-describedby="emailHelp" required />
+							<small id="emailHelp" class="form-text text-muted">
+                                    We'll never share your email with anyone else.
+                                </small>
+						</div>
+						<div class="form-group">
+							<label for="support-passworld">Password</label>
+							<input type="password" class="form-control" placeholder="Choose a password" id="support-passworld" required />
+                            </div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+								<label class="form-check-label" for="exampleCheck1">
+                                    Remember me
+                                </label>
+								<br />
+								<br />
+								<input type="checkbox" id="news" name="news" class="form-check-input" />
+								<label for="news" class="form-check-label">
+                                    Subscribe to our Newsletter
+                                </label>
+							</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary support-btn" data-dismiss="modal">
+                            Submit
+                        </button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--                                  js -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -225,11 +273,11 @@
 	<script defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-8TB4Z-1GUBHV8W5r_5AiPbMOn1CA8jU&callback=initMap">
 	</script>
-    
-    <script type="text/javascript" src="assets/js/maps.js"></script>
-	
-    	<!--Load tests-->
-	
+
+	<script type="text/javascript" src="assets/js/maps.js"></script>
+
+	<!--Load tests-->
+
 
 </body>
 

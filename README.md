@@ -5,17 +5,17 @@ Nanogram is a puzzle game that is similar to minesweeper. Players shoild find ou
  
 This puzzle is a fun colorful game and like all the other simple puzzle game improves players strategy and way of thinking. 
 
-- As a player, I want the game be functional and give the right result by clicking the colored or gray squares.
-
 - As a player, I want to easily be able to find the rules about the game.
 
 - As a player, I want to play a puzzle game that I can enjoy.
 
-- As a player, I like to strategize which squares are gray(blank) or colored by being able to right/left click on them the different from each other.
+- As a player, I want the game be functional and give the right result by clicking the colored or gray squares.
 
-- As a player I want the game page don't pop up any alert or bugs while playing.
+- As a player, I like to strategize which squares are gray(blank) or colored by being able to right/left click on them the differentiate them from each other.
 
-- As a player I want to compare my result to other players and find out about high scores.
+- As a player, I want the game page don't pop up any alert or bugs while I'm playing.
+
+- As a player, I want to compare my result to other players and find out about high scores.
 
 - As a player, I want to be able to contact the support in case of any bugs or problems accuring during the game.
 
@@ -54,6 +54,8 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 - add more nanogram puzzles.
 
 - add more easy fun games to the website.
+
+- make a social media page for the game.
 
 ## Technologies Used
 
@@ -121,12 +123,12 @@ In addition, if it is not obvious, you should also describe how to run your code
 - I received inspiration for this project from my mentor, Rohit sharma.
 - I also want to thank all of the support group from code institute.
 
-
-
-
-
-
-
-
 `python3 -m http.server`
+
+
+
+
+
+
+
 

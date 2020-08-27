@@ -22,7 +22,20 @@ $(document).ready(function () {
             lives.style.color = "red";
         }
     };
+    
+//                                                                hint rules
 
+    $("#hint-btn").on("click", function () {
+        var hints = {
+            "hint 1": "First right click on all the boxes on the 3rd row",
+            "hint 2": "Now the first and last coloumn have on colored box in them so the rest of the boxes in these columns are gray.",
+            "hint 3": "The only way you can fill 2 colored boxes in the second row is to fill in the first and the last boxes as colored and the middle on is gray", 
+            "hint 4": "The only way to have 2 sequence of colored boxes with 1 and 2 boxes is to fill the top and the bottom one."
+        };
+        $.each(hints, function (key, value) {
+            alert(key + ": " + value);
+        });i[]})
+    
 //                                                       on left click rules
 
 
