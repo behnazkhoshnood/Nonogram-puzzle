@@ -37,11 +37,10 @@ function initMap() {
     });
       
     
-    $("tr").on("click", function(location, i){
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        }); 
+    $("tr").on("click", function(){
+        var locaton = locations[(this).index()];
+        map.setZoom(17);
+        map.panTo(location);
     });
        
 }

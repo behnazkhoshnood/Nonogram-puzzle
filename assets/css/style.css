@@ -223,7 +223,7 @@ body{
 /* -----------------------------------------------------Nanogram style */
 
 #hint-btn{
-    width: 80px;
+    width: 90px;
     height: 70px;
     background-color: #64882b;
     text-align: center;
@@ -448,6 +448,19 @@ footer {
     padding-bottom: 10px;
     font-size: 26px;
     font-weight: 600;
+}
+
+.modal-header .close{
+    margin-left: 0px;
+}
+
+.news{
+    margin: 0 auto;
+    text-align: center
+}
+
+small{
+    text-align: center;
 }
 
 /* -----------------------------------------------------medias*/

@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         if (currentCount == 0) {
             alert("You've lost this time!! Good luck for your next try");
-            location.reload()
+            location.reload();
         } else {
 
             lives.innerText = --currentCount;
@@ -21,21 +21,51 @@ $(document).ready(function () {
         if (currentCount == 1) {
             lives.style.color = "red";
         }
-    };
+    }
     
-//                                                                hint rules
+//                                                   hint rules
 
-    $("#hint-btn").on("click", function () {
-        var hints = {
-            "hint 1": "First right click on all the boxes on the 3rd row",
-            "hint 2": "Now the first and last coloumn have on colored box in them so the rest of the boxes in these columns are gray.",
-            "hint 3": "The only way you can fill 2 colored boxes in the second row is to fill in the first and the last boxes as colored and the middle on is gray", 
-            "hint 4": "The only way to have 2 sequence of colored boxes with 1 and 2 boxes is to fill the top and the bottom one."
-        };
-        $.each(hints, function (key, value) {
-            alert(key + ": " + value);
-        });i[]})
-    
+$("#hint-btn").each( function(){
+  var counter = 4 
+  $( this ).click( function(){
+    counter--;
+    $("#hints").html(counter);
+  } );
+  
+  $("#hint-btn").on("click", function(){
+      if(counter == 3){
+      $("#hint-note").html("First right click on all the boxes in 3rd row");
+  }
+});
+
+  $("#hint-btn").on("click", function(){
+      if(counter == 2){
+      $("#hint-note").html("Now left click on all the boxes in first and last column since they already have one colored box in them");
+  }
+  });
+  
+    $("#hint-btn").on("click", function(){
+      if(counter == 1){
+      $("#hint-note").html("In 2nd row we should have 2 seperae colored boxes in 3 boxes so the only way is to right click on the first and last boxes that are left");
+  }
+  });
+  
+      $("#hint-btn").on("click", function(){
+      if(counter == 0){
+      $("#hint-note").html("the onley way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to right click on the first and the last boxes in this column");
+  }
+  });
+ 
+        $("#hint-btn").on("click", function(){
+      if(counter < 0){
+      $("#hints").html("0");
+      $("#hint-note").html("Sorry. You don't have any hints left!")
+  }
+  });
+});
+
+
+
 //                                                       on left click rules
 
 
@@ -44,7 +74,7 @@ $(document).ready(function () {
     });
 
     $(".gray").click(function() {
-        decrementHP();
+        decrementHP()
     });
     
  //                                                            winning rules
@@ -72,7 +102,7 @@ $(document).ready(function () {
         }
         else {
             $(this).removeClass("square").removeClass("not-clicked-color").addClass("clicked-color").unbind("click").unbind("contextmenu");
-            decrementHP()
+            decrementHP();
         }
     });
 // to remove the defult drop down menu when right click on squares on computers
