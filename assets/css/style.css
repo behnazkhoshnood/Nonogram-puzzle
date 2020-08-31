@@ -42,7 +42,8 @@ h4 {
 }
 
 .btn,
-input {
+input,
+textarea {
     font-family: "Sriracha", cursive;
     text-align: center;
     font-weight: 600;

@@ -287,17 +287,21 @@
                         </button>
 												</div>
 												<div class="modal-body">
-													<form>
+													<form  onsubmit="return sendMail(this);" method="POST">
+                                                    <div class="form-group">
+                                                    <label for="name">Full name</label>
+                                                    <input type="text" name="name" class="form-control" id="name" placeholder="Please enter your full name" required/>
+                                                    </div>
 														<div class="form-group">
-															<label for="support-email">Email address</label>
-															<input type="email" class="form-control" placeholder="email@example.com" id="support-email" aria-describedby="emailHelp" required />
+															<label for="emailaddress">Email address</label>
+															<input type="emailaddress" class="form-control" placeholder="email@example.com" id="emailaddress" aria-describedby="emailHelp" required />
 															<small id="emailHelp" class="form-text text-muted">
                                     We'll never share your email with anyone else.
                                 </small>
 														</div>
 														<div class="form-group">
-															<label for="support-passworld">Subject</label>
-															<input type="text" class="form-control" placeholder="Please explaine why you need support" id="support-passworld" required />
+															<label for="supportsummary">Subject</label>
+															<textarea rows="5" name="supportsummary" class="form-control" placeholder="Please explaine why you need support" id="supportsummary" required></textarea>
                             </div>
                             <br>
                                                         <div class="form-group news">
@@ -334,14 +338,16 @@
 									<script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
                                     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
+        </script>
+            <script type="text/javascript">
+            
    (function(){
       emailjs.init("user_iEpN5sXK1VNMcUgOFIEuM");
-      emailjs.send("gmail", "nanogram", )
    })();
 </script>
-									<script type="text/javascript" src="assets/js/script.js"></script>
+
+<script src="assets/js/sendEmail.js"></script>
+									
 
 </body>
 
