@@ -105,7 +105,7 @@ Following steps has been taken to deploy Tadig restaurant website on GitHub page
 
 1. Go to GitHub and click on repository [behnazkhoshnood
 /
-Nanogram-puzzle](https://github.com/behnazkhoshnood/Nanogram_puzzle)
+Nanogram-puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
 
 1. Click on **Settings** on the top right of the page
 
