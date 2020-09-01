@@ -123,7 +123,7 @@ Follow these steps to run the website locally on your machine;
 
 1. Go to Github repository [behnazkhoshnood
 /
-Nanogram_puzzle](https://github.com/behnazkhoshnood/Nanogram_puzzle)
+Nanogram_puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
 
 1. Click on **Clone or Download**
 
