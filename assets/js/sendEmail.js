@@ -1,16 +1,13 @@
-function sendMail(contactForm) {
-    emailjs.send("gmail", "nanogram", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
+(function(){
+           emailjs.init('user_iEpN5sXK1VNMcUgOFIEuM');
+        })();
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+                alert("Your massage has been successfully sent.")
+                location.reload();
+            });
         }
-    );
-    return false;  // To block from loading a new page
-}

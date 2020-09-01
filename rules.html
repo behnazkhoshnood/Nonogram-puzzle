@@ -14,6 +14,7 @@
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Nanogram puzzle</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 </head>
 <!--                                                           header -->
 
@@ -43,7 +44,8 @@
 	</header>
 	<h2> HOW TO Win: </h2>
 	<h6>By avoiding to click on the gray boxes and find all the colorfull boxes before you run out of lives. you can
-		right-click on the gray boxes to rule them out. On mobile phones just hold your finger on the square for few seconds to mark them as gray box.</h6>
+		right-click on the gray boxes to rule them out. On mobile phones just hold your finger on the square for few
+		seconds to mark them as gray box.</h6>
 	<h2>How to play</h2>
 	<h6>Every number on the corner boxes represents a sequence. for example:</h6>
 	<h3>You have <span id="hp">3</span> lives left</h3>
@@ -90,8 +92,8 @@
 							<div class="square gray"></div>
 						</div>
 					</div>
-                    <h4 id="hint-btn">Hint <span id="hints">4</span></h4>
-                    <p id="hint-note">You have 4 hints left</p>
+					<h4 id="hint-btn">Hint <span id="hints">4</span></h4>
+					<p id="hint-note">You have 4 hints left</p>
 					<!--                              footer -->
 					<footer class="rules-footer">
 						<div class="row footer-row">
@@ -201,60 +203,56 @@
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title center">
-										Please Sign Up / Sign in and follow your loyalty chart.
-									</h5>
+									<h4 class="modal-title center">
+										Contact us for more support
+									</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
 								</div>
 								<div class="modal-body">
-									<form>
+									<form id="contact-form">
+										<input type="hidden" name="contact_number">
 										<div class="form-group">
-											<label for="support-email">Email address</label>
-											<input type="email" class="form-control" placeholder="email@example.com" id="support-email" aria-describedby="emailHelp" required />
-											<small id="emailHelp" class="form-text text-muted">
+											<label for="user-name">Full name</label>
+											<input type="text" name="user-name" class="form-control" id="user-name" placeholder="Please enter your full name" required/>
+                                                    </div>
+
+											<div class="form-group">
+												<label for="user-email">Email address</label>
+												<input type="email"
+                                                            name="user-email" class="form-control" id="user-email" placeholder="email@example.com" aria-describedby="emailHelp" required />
+												<small id="emailHelp" class="form-text text-muted">
                                     We'll never share your email with anyone else.
                                 </small>
-										</div>
-										<div class="form-group">
-											<label for="support-passworld">Password</label>
-											<input type="password" class="form-control" placeholder="Choose a password" id="support-passworld" required />
-                            </div>
-											<div class="form-group form-check">
-												<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-												<label class="form-check-label" for="exampleCheck1">
-                                    Remember me
-                                </label>
-												<br />
-												<br />
-												<input type="checkbox" id="news" name="news" class="form-check-input" />
-												<label for="news" class="form-check-label">
-                                    Subscribe to our Newsletter
-                                </label>
 											</div>
-									</form>
+											<div class="form-group">
+												<label for="massage">Subject</label>
+												<textarea rows="5" name="massage" class="form-control" placeholder="Please explaine why you need support" id="massage" required></textarea>
+											</div>
+											<input type="submit" value="Send" class="btn btn-primary support-btn" id="submit-btn">
+                        </form>
+										</div>
 								</div>
-								<div class="modal-footer">
-									<button type="submit" class="btn btn-primary support-btn" data-dismiss="modal">
-                            Submit
-                        </button>
-								</div>
+
+
 							</div>
+
 						</div>
-					</div>
-					<!--                                  js -->
-					<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-						integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-						crossorigin="anonymous"></script>
-					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-						crossorigin="anonymous"></script>
-					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-						integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-						crossorigin="anonymous"></script>
-					<script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
-					<script type="text/javascript" src="assets/js/script.js"></script>
+
+						<!--                                  js -->
+						<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+							integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+							crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+							integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+							crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+							integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+							crossorigin="anonymous"></script>
+						<script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
+						<script type="text/javascript" src="assets/js/script.js"></script>
+						<script type="text/javascript" src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

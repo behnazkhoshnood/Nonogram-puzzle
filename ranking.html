@@ -14,6 +14,7 @@
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Nanogram puzzle</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 </head>
 <!--                                                           header -->
 
@@ -211,51 +212,46 @@
 	</footer>
 	<!--                                                               modal -->
 	<div class="modal" tabindex="-1" role="dialog" id="support-btn">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title center">
-						Please Sign Up / Sign in and follow your loyalty chart.
-					</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title center">
+										Contact us for more support
+									</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="support-email">Email address</label>
-							<input type="email" class="form-control" placeholder="email@example.com" id="support-email" aria-describedby="emailHelp" required />
-							<small id="emailHelp" class="form-text text-muted">
+								</div>
+								<div class="modal-body">
+									<form id="contact-form">
+										<input type="hidden" name="contact_number">
+										<div class="form-group">
+											<label for="user-name">Full name</label>
+											<input type="text" name="user-name" class="form-control" id="user-name" placeholder="Please enter your full name" required/>
+                                                    </div>
+
+											<div class="form-group">
+												<label for="user-email">Email address</label>
+												<input type="email"
+                                                            name="user-email" class="form-control" id="user-email" placeholder="email@example.com" aria-describedby="emailHelp" required />
+												<small id="emailHelp" class="form-text text-muted">
                                     We'll never share your email with anyone else.
                                 </small>
-						</div>
-						<div class="form-group">
-							<label for="support-passworld">Password</label>
-							<input type="password" class="form-control" placeholder="Choose a password" id="support-passworld" required />
-                            </div>
-							<div class="form-group form-check">
-								<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-								<label class="form-check-label" for="exampleCheck1">
-                                    Remember me
-                                </label>
-								<br />
-								<br />
-								<input type="checkbox" id="news" name="news" class="form-check-input" />
-								<label for="news" class="form-check-label">
-                                    Subscribe to our Newsletter
-                                </label>
+											</div>
+											<div class="form-group">
+												<label for="massage">Subject</label>
+												<textarea rows="5" name="massage" class="form-control" placeholder="Please explaine why you need support" id="massage" required></textarea>
+											</div>
+											<input type="submit" value="Send" class="btn btn-primary support-btn" id="submit-btn">
+                        </form>
+										</div>
+								</div>
+
+
 							</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="submit" class="btn btn-primary support-btn" data-dismiss="modal">
-                            Submit
-                        </button>
-				</div>
-			</div>
-		</div>
-	</div>
+
+						</div>
+
 	<!--                                  js -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -275,6 +271,7 @@
 	</script>
 
 	<script type="text/javascript" src="assets/js/maps.js"></script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
 
 </body>
 
