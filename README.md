@@ -105,7 +105,7 @@ Following steps has been taken to deploy Tadig restaurant website on GitHub page
 
 1. Go to GitHub and click on repository [behnazkhoshnood
 /
-Nanogram-puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
+Nanogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
 
 1. Click on **Settings** on the top right of the page
 
@@ -122,8 +122,7 @@ Nanogram-puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
 Follow these steps to run the website locally on your machine;
 
 1. Go to Github repository [behnazkhoshnood
-/
-Nanogram_puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
+/Nanogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
 
 1. Click on **Clone or Download**
 
@@ -143,11 +142,11 @@ Nanogram_puzzle](https://github.com/behnazkhoshnood/nanogram_puzzle)
   
     - Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-  -[Stack overflow](https://stackoverflow.com/)
+  - [Stack overflow](https://stackoverflow.com/)
   
     - Used for fixing the bugs and some of the codes.
 
-  - to open my project in the browser I used this code: `python3 -m http.server` 
+  - To open my project in the browser I used this code: `python3 -m http.server` 
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
