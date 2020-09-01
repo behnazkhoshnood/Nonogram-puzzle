@@ -29,7 +29,27 @@ function initMap() {
             label: labels[i % labels.length]
         }); 
     });
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });  
-     
+      
+	var previousMarker = null;
+	var namesTable = document.getElementById("names");
+    var rows = namesTable.getElementsByTagName("tr");
+    for (i = 1; i < rows.length; i++) {
+      var currentRow = namesTable.rows[i];
+      var createClickHandler = function(row) {
+        return function() {
+          var nameCell = row.getElementsByTagName("td")[1];
+          var name = nameCell.innerHTML;
+		  var marker = markers.find( function(m) {return m.label==name;});
+		  if (marker) {
+			  if (previousMarker && previousMarker.setMap) {
+                previousMarker.setMap(null);
+			  }
+			  marker.setMap(map);
+			  previousMarker = marker;
+		  }
+        };
+      };
+      currentRow.onclick = createClickHandler(currentRow);
+  }
 
 }
