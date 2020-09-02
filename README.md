@@ -83,17 +83,17 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
   - The design of the website is mainly the same for desktop and tablet however on mobile screen the content will be re-arranged. The user will move from top to bottom.
 
-  - index Page Wireframe -[ View]()
+  - index Page Wireframe -[ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/index-website-view.png)
 
-    - Mobile Wireframe - [ View]()
+    - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/index-mobile-view.png)
 
-  - Nanogram page Pages Wireframe - [ View]()
+  - Nanogram page Pages Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/nanogram-website-view.png)
   
-    - Mobile Wireframe - [ View]()
+    - Mobile Wireframe - [ View]https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Nanogram-mobile-view.png()
 
-  - Ranking Page Wireframe -[ View]()
+  - Ranking Page Wireframe -[ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/ranking-website-view.png)
 
-    - Mobile Wireframe - [ View]()
+    - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Ranking-mobile-view.png)
 
 ## **Features**
  
