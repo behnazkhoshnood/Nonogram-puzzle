@@ -2,7 +2,10 @@
 
 ## **Description**
 
-[View the live project here.](https://behnazkhoshnood.github.io/Nanogram-puzzle/)
+[View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle/
+)
+
+
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
