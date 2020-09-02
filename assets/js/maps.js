@@ -39,7 +39,9 @@ function initMap() {
         return function() {
           var nameCell = row.getElementsByTagName("td")[1];
           var name = nameCell.innerHTML;
-		  var marker = markers.find( function(m) {return m.label==name;});
+		  var marker = markers.find( function(m) {
+              return m.label==name;
+            });
 		  if (marker) {
 			  if (previousMarker && previousMarker.setMap) {
                 previousMarker.setMap(null);

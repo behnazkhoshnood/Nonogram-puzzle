@@ -1,9 +1,15 @@
-# Nanogram Puzzle
+# **Nanogram Puzzle**
+
+## **Description**
+
+[View the live project here.](https://behnazkhoshnood.github.io/Nanogram-puzzle/)
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
-## UX
+## **User Experience (UX)**
  
-This puzzle is a fun colorful game and like all the other simple puzzle game improves players strategy and way of thinking. 
+This puzzle is a fun colorful game and like all the other simple puzzle game improves players strategy and way of thinking.
+
+- ### **User Stories** 
 
 - As a player, I want to easily be able to find the rules about the game.
 
@@ -23,15 +29,80 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - As a player, I want to see social media and connect with other players who are playing the game.
 
+- ### **Design**
+
+  - #### Colour Scheme
+
+    - The 4 main colours used are:
+    
+    - #64882b for Rules page which is close to green.
+
+    - #1982C4 for Nanogram page which is a nice blue color.
+
+    - #896BB3 for Ranking page which is in the scope of violet.
+
+    - and #fafafa which is a shade of gray and cream which used for the color of the body of the pages.
+    
+- #### Typography
+
+  - Siracha and Source Sans Pro font are the main fonts used throughout the whole website with Cursive and Sans Serif as the fallback font in a case for any reason the font isn't being imported into the site correctly.
+  
+- ### **Structure**
+
+  - #### First and third section(header and footer):
+
+    - The website consist of 3 pages named: Rules , Nanogram and Ranking. Each page has three sections.
+
+    - The content of the header and footer sections are the same in all the pages. The Header section consists of the navbar menu for navigation through the website and the footer section consists of Contact button, More games and social media links.
+
+  - #### Second section:
+
+    - **Rules page**
+
+     - This section consist of a turtorial nanogram with lots of guide notes to show how the game works. 
+      
+     - In this page there is also a hint button that can be used for more guidenss throughout the game.
+
+    - **Nanogram pages**
+
+     - This section consist of the main nanogram puzzle.
+     - In this page and the Rules page there is also a header that shows the player how much life they have left.
+
+   - **Ranking page**
+
+     - This section consists of a table of the name of the players, their rank and their location.
+
 ### Wireframes
 
+  - Wireframes are created using balsamiq.
+  
+  - Link to the wireframes is available under wireframes.
 
+  - The design of the website is mainly the same for desktop and tablet however on mobile screen the content will be re-arranged. The user will move from top to bottom.
 
+  - Rules Page Wireframe -[ View](https://github.com/behnazkhoshnood/my-first-milestone-project/blob/master/wireframes/HOME-page-desktop-view.png)
 
+    - Mobile Wireframe - [ View]()
 
-## Features
+  - Nanogram page Pages Wireframe - [ View]()
+  
+    - Mobile Wireframe - [ View]()
+
+  - Ranking Page Wireframe -[ View]()
+
+    - Mobile Wireframe - [ View]()
+
+## **Features**
  
 ### Existing Features
+
+- Easy to use.
+
+- Interactive elements.
+
+- Colorful navbar menu is unique for each page which makes navigation easier.
+
+- It's easy to find navbar, social media links, and contact button in all the pages.
 
 - Players can easily find the rules page by clicking on the rules button on the top left corner on the menu.
 
@@ -57,36 +128,87 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - Make a social media page for the game.
 
+- Make a logo for the game.
+
+- Make a switch button for click and hold the button in mobile phones instead on clicking the boxes one by one.
+
 ## Technologies Used
 
-- [HTML](https://html.com)
-   - The project uses **HTML** to make the core part of the page.
-   
-- [CSS](https://css.com)
-   - The project uses **CSS** to style the page.
-   
-- [JavaScript](https://javascript.com)
-   - The project uses **JavaScript** to write down some codes related to the nanogram puzzle and google map.
-   
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+### **Languages Used**
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+- [JavaScreept](https://en.wikipedia.org/wiki/JavaScript)
+
+### **Frameworks, Libraries & Programs Used**
+
+- [Bootstrap 4.4.1](https://getbootstrap.com/)
+
+  - Bootstrap was used to assist with the responsiveness and styling of the website.
+
+- [Google fonts](https://fonts.google.com/)
+
+  - Google fonts Roboto and Baloo Bhaina are used on all pages throughout the project.
+
+- [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
+
+  - Fontawesome icons were used on all pages throughout the website to add icons for aesthetic and UX purposes.
+
+- [Hover.css](https://ianlunn.github.io/Hover/)
+
+  - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+
+  - Hover effect hvr-sweep-to-bottom has been used in menu buttons.
+
+  - Hover.css was used on the Sign in / Sign up button.
+
+  - Hover.css was used on the Reservation and Rate us button.
+  
+- [Google map](https://cloud.google.com/maps-platform/)
+  
+  - To add the google map to the project.
     
-- [Fontawesome](https://fontawesome.com)
-    - The project uses **Fontawesome** to add some icons to the footer of the page. 
+- [emailJs](https://www.emailjs.com/)
+
+  - To make the contact form functional. 
+
+- [Git](https://en.wikipedia.org/wiki/Git)
+
+  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+
+- [github](https://github.com/)
+
+  - GitHub is used to store the project's code after being pushed from Git.
+
+- [gitpod](https://www.gitpod.io/)
+
+  - Gitpod is used for testing the project.
+
+- [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
+
+  - Balsamiq was used to create the wireframes during the design process.
 
 ## Testing
+
+- Navbar pages are linked correctly to the right page.
+
+- In rules page the hint button shows the number of hints left and in each click shows a new hint till the player ran out of hints.
 
 - When players left-click on squares that should be colored; it is a success and the player doesn't lose a life.
 
 - When the player left-click on the squares that should be gray(blank). it's a mistake and the player loses a life.
 
-- When players right-click on the square that should be gray(blank); it is a success and the player doesn't lose a life.
-
 - When the player right-clicks on the square that should be colored; it is a success and the player doesn't lose a life.
+
+- When players right-click on the square that should be gray(blank); it is a success and the player doesn't lose a life.
 
 - When the player lost all their lives an alert shows up that they lost the game and page reloads.
 
 - When the player wins they get an alert that the won the game, all the squares are shown and the page reloads.
+
+- Anytime the player makes a mistake they lose one HP and it shows in the header above the page under the navbar.
 
 ***Contact form:***
 
@@ -96,8 +218,19 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
     
 3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
     
-4. Try to submit the form with all inputs valid and verify that a success message appears.
+4. Try to submit the form with all inputs valid and verify that a success message appears and Modal closes after few Seconds.
 
+5. A massage will be send to support from the player with their request.
+
+### **Further Testing**
+
+- The Website was tested on Google Chrome, Microsoft Edge, and Firefox browser.
+
+- The website was shown responsive on a variety of emulated devices such as Jio phone, iphone4, 5, SE, 6, 6 plus, 7, 7plus, 8, 8plus and X, Nokia Lumia 520 and N9, Moto G4, Galaxy S5, Blackberry Z30 and playbook, Galaxy note, Microsoft Lumia 950 and 550, LG Optimus L70, Nexus 4, 5, 6, 7 and 10, 6P, Pixel 2 and 2XL, iPad mini, iPad, Kindle Fire, iPad pro and laptop with MDPI, touch, and HiDPI.
+
+- A large amount of testing was done to ensure that all pages were linking correctly.
+
+- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ## **Deployment**
 
@@ -145,11 +278,17 @@ Follow these steps to run the website locally on your machine;
   - [Stack overflow](https://stackoverflow.com/)
   
     - Used for fixing the bugs and some of the codes.
+    
+  - [W3Schools](https://www.w3schools.com/default.asp)
+  
+    - To get some guidenss throughout the project.
+   
+  - [Gitpod](https://www.gitpod.io/)
 
-  - To open my project in the browser I used this code: `python3 -m http.server` 
+    - To open my project in the browser I used this code: `python3 -m http.server` 
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All the content is writen by myself.
 
 ### Media
 - The photos used in this site were obtained from google.map API
@@ -158,11 +297,13 @@ Follow these steps to run the website locally on your machine;
 
 1. A special thanks to my mentor, Rohit Sharma, for his valuable feedback during mentoring sessions.
 
+1. A special thanks to my friend Amir Monshi for helping me with some of the codes related to google map API.
+
 1. Also, I like to thank all of the Code Institute support groups.
 
 1. The design and layout of this website are based on the Rule of Thirds.
 
-1. All the images on the website have an external source and have been used for only educational purposes.
+1. The images on the website have an external source and have been used for only educational purposes.
 
 1. Code Institute tutorials were very helpful throughout the whole project.
 
