@@ -26,7 +26,7 @@ $(document).ready(function () {
 //                                                   hint rules
 
 $("#hint-btn").each( function(){
-  var counter = 4 
+  var counter = 4
   $( this ).click( function(){
     counter--;
     $("#hints").html(counter);
@@ -58,7 +58,7 @@ $("#hint-btn").each( function(){
  
         $("#hint-btn").on("click", function(){
       if(counter < 0){
-      $("#hints").html("0");
+      $("#hints").html(0);
       $("#hint-note").html("Sorry. You don't have any hints left!")
   }
   });

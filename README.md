@@ -232,6 +232,13 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
+## **Known Bugs**
+
+- The sweep to bottom hover effect doesn't cover the buttons on some mobile phones.
+
+- Sometimes the browser doesn't open the site but after reloading the page it workes properly.
+
+
 ## **Deployment**
 
 Following steps has been taken to deploy Tadig restaurant website on GitHub pages;

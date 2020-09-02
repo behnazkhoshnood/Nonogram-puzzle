@@ -418,7 +418,6 @@ footer {
 
 .social-links {
     margin: 0 auto;
-        padding-right: 25px;
 }
 
 .social-links li {
@@ -446,7 +445,7 @@ footer {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 25px;
     padding-bottom: 10px;
     font-size: 26px;
     font-weight: 600;
@@ -466,6 +465,35 @@ small{
 }
 
 /* -----------------------------------------------------medias*/
+@media only screen and (max-width: 350px){
+    .social-links{
+        padding-right: 20px;
+        margin-left: -15px;
+    }
+    
+    .menuitem span,
+    .column,
+    .head,
+    .lvl{
+        font-size: 10px;
+    }
+    
+    h3{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width: 550px) {
+    .social-links{
+        padding-left: 25px;
+    }
+}
+
+@media only screen and (min-width:551px) and (max-width: 750px) {
+     .social-links{
+         padding-left: 50px;
+     }
+}
 
 @media only screen and (min-width:600px) and (max-width: 800px) {
     
@@ -602,3 +630,22 @@ font-size: 19px;
   
 }
 
+@media only screen and (min-height:1150px){
+    
+.black,
+.red,
+.green,
+.blue,
+.gray,
+.column{
+    height: 90px;
+}
+
+.square{
+    height: 90px;
+    width: 9%;
+    border: 1px solid;
+    text-align: center;
+    background-color: #fff;
+}
+}
