@@ -38,7 +38,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
     - The 4 main colours used are:
     
-    - #64882b for Rules page which is close to green.
+    - #64882b for Rules(index) page which is close to green.
 
     - #1982C4 for Nanogram page which is a nice blue color.
 
