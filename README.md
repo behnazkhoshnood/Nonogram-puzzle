@@ -83,7 +83,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
   - The design of the website is mainly the same for desktop and tablet however on mobile screen the content will be re-arranged. The user will move from top to bottom.
 
-  - Rules Page Wireframe -[ View](https://github.com/behnazkhoshnood/my-first-milestone-project/blob/master/wireframes/HOME-page-desktop-view.png)
+  - index Page Wireframe -[ View]()
 
     - Mobile Wireframe - [ View]()
 

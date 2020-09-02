@@ -344,6 +344,7 @@ tr{
 
 th{
     text-align: center;
+    width: 150px;
 }
 
 td{
@@ -474,8 +475,14 @@ small{
     .menuitem span,
     .column,
     .head,
-    .lvl{
+    .lvl,
+    th,
+    tr{
         font-size: 10px;
+    }
+    
+    tr{
+        font-weight: bold;
     }
     
     h3{
