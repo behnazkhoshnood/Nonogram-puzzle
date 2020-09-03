@@ -4,7 +4,7 @@
 
 [View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle)
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/view/rule-page-view.png?raw=true)
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
@@ -86,9 +86,9 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
     - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/index-mobile-view.png)
 
-  - Nanogram page Pages Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/nanogram-website-view.png)
+  - Nanogram page Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/nanogram-website-view.png)
   
-    - Mobile Wireframe - [ View]https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Nanogram-mobile-view.png()
+    - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Nanogram-mobile-view.png)
 
   - Ranking Page Wireframe -[ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/ranking-website-view.png)
 
@@ -196,9 +196,9 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- [W3C Markup Validator](Validator.nu/LV http://validator.w3.org/services) : [Result]()
+- [W3C Markup Validator](https://validator.w3.org/) : [Result](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/validators/CSS-validator.png)
 
-- [W3C CSS Validator](https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service) : [Result]()
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) : [Result](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/validators/HTML-validator.png)
 
 - Further, the testing of the project has been carried out from the beginning using google developer tools.
 

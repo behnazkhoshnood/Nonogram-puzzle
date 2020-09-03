@@ -25,47 +25,26 @@ $(document).ready(function () {
     
 //                                                   hint rules
 
-$("#hint-btn").each( function(){
-  var counter = 4
-  $( this ).click( function(){
-    counter--;
-    $("#hints").html(counter);
-  } );
-  
-  $("#hint-btn").on("click", function(){
-      if(counter == 3){
-      $("#hint-note").html("First right click on all the boxes in 3rd row");
-  }
-});
+let notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to right click on the first and the last boxes in this column","In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Right click on the first and the last box in the 2nd row",
+        "Now left click on all the boxes in first and last column since they already have one colored box in them",
+        "First right click on all the boxes in 3rd row"];
+        
+let counter = 4
 
-  $("#hint-btn").on("click", function(){
-      if(counter == 2){
-      $("#hint-note").html("Now left click on all the boxes in first and last column since they already have one colored box in them");
-  }
-  });
-  
-    $("#hint-btn").on("click", function(){
-      if(counter == 1){
-      $("#hint-note").html("In 2nd row we should have 2 seperae colored boxes in 3 boxes so the only way is to right click on the first and last boxes that are left");
-  }
-  });
-  
-      $("#hint-btn").on("click", function(){
-      if(counter == 0){
-      $("#hint-note").html("the onley way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to right click on the first and the last boxes in this column");
-  }
-  });
- 
-        $("#hint-btn").on("click", function(){
-      if(counter < 0){
-      $("#hints").html(0);
-      $("#hint-note").html("Sorry. You don't have any hints left!")
-  }
-  });
+$("#hint-btn").click(function() {
+counter --;
+$("#hint-note").html(notes[counter]);
+$("#hints").html(counter);
+
+if(counter < 0){
+    $("#hint-btn").unbind("click");
+    $("#hint-note").html("Sorry, you have no hints left.");
+}
+
 });
 
 
-
+   
 //                                                       on left click rules
 
 
@@ -119,5 +98,3 @@ $("#hint-btn").each( function(){
 
 
 
- 
-  
