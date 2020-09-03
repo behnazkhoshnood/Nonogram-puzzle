@@ -391,13 +391,13 @@ footer {
 .btn-primary:hover {
     color: #fafafa;
     background-color:  #cc9600;
-    border-color:  #cc9600;
+    border-color:  #b98b0b;
 }
 
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     background-color: #CC9600;
-    border-color:  #CC9600;
+    border-color:  #b98b0b;
 }
 
 .games{
@@ -423,7 +423,6 @@ footer {
 
 .social-links li {
     padding-top: 20px;
-    margin-block-end: 20px;
     padding-right: 15px;
 }
 

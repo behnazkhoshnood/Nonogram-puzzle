@@ -2,10 +2,9 @@
 
 ## **Description**
 
-[View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle/
-)
+[View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle)
 
-
+![alt text](http://url/to/img.png)
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
@@ -194,6 +193,17 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
   - Balsamiq was used to create the wireframes during the design process.
 
 ## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+- [W3C Markup Validator](Validator.nu/LV http://validator.w3.org/services) : [Result]()
+
+- [W3C CSS Validator](https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service) : [Result]()
+
+- Further, the testing of the project has been carried out from the beginning using google developer tools.
+
+- User stories from the UX section that didn't need usage of javascript were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+
 
 - Navbar pages are linked correctly to the right page.
 
