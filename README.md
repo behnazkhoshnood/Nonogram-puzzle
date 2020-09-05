@@ -23,11 +23,11 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - As a player, I want the game page don't pop up any alert or bugs while I'm playing.
 
-- As a player, I want to compare my result to other players and find out about high scores.
+- As a player, I want to compare my result to other players and find out about high scores and some details about top players.
 
 - As a player, I want to be able to contact the support in case of any bugs or problems occurring during the game.
 
-- As a player, I want to get some recommendations for similar games.
+- As a player, I want to get some recommendations for more games.
 
 - As a player, I want to see social media and connect with other players who are playing the game.
 
@@ -68,11 +68,12 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
     - **Nanogram pages**
 
      - This section consist of the main nanogram puzzle.
-     - In this page and the Rules page there is also a header that shows the player how much life they have left.
+     - In this page and the Rules page there is also a header that shows the player how much life they have left and 2 buttons to click between clicking on colored or gray aquares.
 
    - **Ranking page**
 
-     - This section consists of a table of the name of the players, their rank and their location.
+     - This section consists of a table of the name of the players, their rank and their location and a google map under that, which shows the location of top players on the map.
+
 
 ### Wireframes
 

@@ -245,7 +245,7 @@ body{
       color: #fafafa; 
       height: 35px;
       font-size: 18px;
-      box-shadow: 2px;
+      border-radius: 5px;
 }
 
 #hint-btn{
