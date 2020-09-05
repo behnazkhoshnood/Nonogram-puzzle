@@ -302,6 +302,10 @@ Follow these steps to run the website locally on your machine;
   - [W3Schools](https://www.w3schools.com/default.asp)
   
     - To get some guidenss throughout the project.
+    
+  - [Developr Mozilla](https://developer.mozilla.org/)
+  
+    - To get some guidenss throughout the project.
    
   - [Gitpod](https://www.gitpod.io/)
 

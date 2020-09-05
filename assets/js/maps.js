@@ -61,15 +61,14 @@ $(document).ready(function () {
     $("tr").click(function () {
         $('tr').removeClass('make-purple');
         $(this).addClass('make-purple');
-
+});
         function scrollToMap() {
             var map = document.getElementById("map");
-            map.scrollIntoView();
+            map.scrollIntoView({behavior: "smooth"});
+
         }
 
-        $("tr").dblclick(function () {
+        $("tr").on("click", function () {
             scrollToMap();
-        });
-
-    });
+        });   
 });
