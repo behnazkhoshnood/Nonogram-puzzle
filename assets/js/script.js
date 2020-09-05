@@ -3,16 +3,16 @@ $(document).ready(function () {
     
     //                                                       loosing HP rules
     function decrementHP() {
-        var lives = document.getElementById("hp");
-        var currentCount = lives.innerText;
-
+        let lives = document.getElementById("hp");
+        let currentCount = lives.innerText;
+           
         if (currentCount == 0) {
             alert("You've lost this time!! Good luck for your next try");
             location.reload();
         } else {
 
             lives.innerText = --currentCount;
-        }
+        }     
 
         if (currentCount == 2) {
             lives.style.color = "darkorange";
