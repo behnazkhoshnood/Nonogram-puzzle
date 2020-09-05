@@ -19,7 +19,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - As a player, I want the game to be functional and give the right result by clicking the colored or gray squares.
 
-- As a player, I like to strategize which squares are gray(blank) or colored by being able to right/left click on them the differentiate them from each other.
+- As a player, I like to strategize which squares are gray(blank) or colored by being able to switch click on them the differentiate them from each other.
 
 - As a player, I want the game page don't pop up any alert or bugs while I'm playing.
 

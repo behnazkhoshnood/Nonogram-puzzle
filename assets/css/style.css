@@ -232,18 +232,21 @@ body{
     margin-right: 5px;
     margin-left: 5px;
     width: 80px;
+    padding: 5px;
+    border-radius: 11px; 
 }
-
+ 
 .switch:focus{
-    border-radius: 2px;
-    border:none;
-}         
+    border-color: #6b6666;
+    border-radius: 11px;
+}      
 
 .active{
-      background-color: hsl(0, 2%, 41%); 
+      background-color: #6b6666; 
       color: #fafafa; 
-      border:none;
-      height: 35px;
+      height: 45px;
+      border-radius: 11px;
+      font-size: 20px;
 }
 
 #hint-btn{
