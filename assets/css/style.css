@@ -227,26 +227,25 @@ body{
 }
 
 /* -----------------------------------------------------Nanogram style */
-
 .switch{
     margin-right: 5px;
     margin-left: 5px;
     width: 80px;
-    padding: 5px;
-    border-radius: 11px; 
+    padding: 2px; 
+    font-size: 15px;
+    height: 30px;
 }
  
 .switch:focus{
     border-color: #6b6666;
-    border-radius: 11px;
 }      
 
 .active{
       background-color: #6b6666; 
       color: #fafafa; 
-      height: 45px;
-      border-radius: 11px;
-      font-size: 20px;
+      height: 35px;
+      font-size: 18px;
+      box-shadow: 2px;
 }
 
 #hint-btn{
