@@ -59,8 +59,8 @@ function initMap() {
 
 $(document).ready(function () {
     $("tr").click(function () {
-        $('tr').removeClass('make-purple');
-        $(this).addClass('make-purple');
+        $("tr").removeClass("make-purple");
+        $(this).addClass("make-purple");
 });
         function scrollToMap() {
             var map = document.getElementById("map");

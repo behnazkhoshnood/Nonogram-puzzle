@@ -43,7 +43,7 @@ h4 {
 
 .btn,
 input,
-textarea {
+textarea{
     font-family: "Sriracha", cursive;
     text-align: center;
     font-weight: 600;
@@ -61,6 +61,10 @@ p {
     margin: 0 auto;
     max-width: 80%;
     padding-bottom: 10px;
+}
+
+label{
+   font-family: "Sriracha", cursive; 
 }
 
 ul {
@@ -223,6 +227,24 @@ body{
 }
 
 /* -----------------------------------------------------Nanogram style */
+
+.switch{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 80px;
+}
+
+.switch:focus{
+    border-radius: 2px;
+    border:none;
+}         
+
+.active{
+      background-color: hsl(0, 2%, 41%); 
+      color: #fafafa; 
+      border:none;
+      height: 35px;
+}
 
 #hint-btn{
     width: 90px;

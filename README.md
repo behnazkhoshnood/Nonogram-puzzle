@@ -306,7 +306,11 @@ Follow these steps to run the website locally on your machine;
   - [Developr Mozilla](https://developer.mozilla.org/)
   
     - To get some guidenss throughout the project.
-   
+    
+  - [Jquary] (https://api.jquery.com/)  
+  
+    - To get some guidenss throughout the project.
+    
   - [Gitpod](https://www.gitpod.io/)
 
     - To open my project in the browser I used this code: `python3 -m http.server` 
@@ -320,8 +324,6 @@ Follow these steps to run the website locally on your machine;
 ### **Acknowledgements**
 
 1. A special thanks to my mentor, Rohit Sharma, for his valuable feedback during mentoring sessions.
-
-1. A special thanks to my friend Amir Monshi for helping me with some of the codes related to google map API.
 
 1. Also, I like to thank all of the Code Institute support groups.
 
