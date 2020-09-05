@@ -339,6 +339,18 @@ table{
     margin-bottom: 25px;
 }
 
+#header{
+    background-color: #896BB3;
+    color: #fafafa;
+}
+
+.make-purple{
+    background-color: #896BB3;
+    color: #fafafa;
+    border-color: #000;
+}
+
+
 tr{
     border: 1px solid;
 }
