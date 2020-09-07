@@ -52,8 +52,6 @@ textarea{
     font-size: 25px;
 }
 
-h5,
-h6, 
 p {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
@@ -64,8 +62,16 @@ p {
     padding-bottom: 10px;
 }
 
+h5,
+h6, 
 label{
-   font-family: "Sriracha", cursive; 
+   font-family: "Sriracha", cursive;
+   text-align: center; 
+}
+
+h6{
+    width: 85%;
+    margin: 0 auto;
 }
 
 ul {
@@ -225,6 +231,7 @@ body{
 }
 
 /* -----------------------------------------------------Nanogram style */
+
 .switch{
     margin-right: 5px;
     margin-left: 5px;
@@ -410,7 +417,6 @@ footer {
     padding-bottom: 0;
     margin-bottom: 5px;
     line-height: 20px;
-    font-size: 17px;
 }
 
 .support-btn {
@@ -422,7 +428,6 @@ footer {
     margin: 0 auto;
     margin-top: 25px;
     bottom: 30px;
-    font-size: 17px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -621,7 +626,10 @@ small{
     padding-top: 20px;
 }
 
-.menuitem span{
+.menuitem span,
+.lvl,
+.lvl-learn,
+.column p{
     font-size: 20px;
 }
 
@@ -647,15 +655,13 @@ small{
 }
 
 .column{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
-.menuitem span{
-    font-size: 20px;
-}
-
+.menuitem span,
 .lvl,
-.lvl-learn{
+.lvl-learn,
+.column p{
     font-size: 20px;
 }
 
@@ -690,12 +696,10 @@ padding-top: 30px;
 font-size: 19px;
 }
 
+.menuitem span,
 .lvl,
-.lvl-learn{
-    font-size: 20px;
-}
-
-.menuitem span{
+.lvl-learn,
+.column p{
     font-size: 20px;
 }
   

@@ -6,7 +6,7 @@ $(document).ready(function () {
        @returns 
     */
     function decrementHP() {
-        let lives = document.getElementById("hp");
+        const lives = document.getElementById("hp");
         let currentCount = lives.innerText;
            
         if (currentCount == 0) {
@@ -28,9 +28,10 @@ $(document).ready(function () {
    
  //                                                   hint rules
 
- let notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.","In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
-        "Now click on the gray button and then click on all the boxes in first and last column since they already have one colored box in them",
-        "First click on all the boxes in 3rd row when colored button is active"];
+ const notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.",
+ "In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
+"Now click on the gray button and then click on all the boxes in first and last column since they already have one colored box in them",
+"First click on all the boxes in 3rd row when colored button is active"];
         
  let counter = 4
 
@@ -50,7 +51,7 @@ $(document).ready(function () {
  
  $(".gray").addClass("not-clicked-gray");
  
-  let colored = $(".square").not(".gray");
+  const colored = $(".square").not(".gray");
  
  $(colored).addClass("not-clicked-color");
  
