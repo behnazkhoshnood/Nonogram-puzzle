@@ -19,9 +19,9 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - As a player, I want the game to be functional and give the right result by clicking the colored or gray squares.
 
-- As a player, I like to strategize which squares are gray(blank) or colored by being able to switch click on them the differentiate them from each other.
+- As a player, I like to differentiate between gray and colored boxes simply by switching betwwn gray or colored button.
 
-- As a player, I want the game page don't pop up any alert or bugs while I'm playing.
+- As a player, I want the game page to avoid poping up any alert or bugs while I'm playing.
 
 - As a player, I want to compare my result to other players and find out about high scores and some details about top players.
 
@@ -59,16 +59,19 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
   - #### Second section:
 
+    - **Rules and Nanogram pages**
+
+     - In these pages there is 2 buttons to switch between clicking on colored or gray aquares on top of the page. A header that shows the remaining lives of the player is also added under the nanogram puzzle.
+     
     - **Rules page**
 
      - This section consist of a turtorial nanogram with lots of guide notes to show how the game works. 
       
      - In this page there is also a hint button that can be used for more guidenss throughout the game.
-
-    - **Nanogram pages**
-
-     - This section consist of the main nanogram puzzle.
-     - In this page and the Rules page there is also a header that shows the player how much life they have left and 2 buttons to click between clicking on colored or gray aquares.
+     
+    - **Nanogram page**
+    
+    - This page consist of the main nanogram puzzle.
 
    - **Ranking page**
 
@@ -133,7 +136,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - Make a logo for the game.
 
-- Make a switch button for click and hold the button in mobile phones instead on clicking the boxes one by one.
+- Make a switch function for click and hold the button in mobile phones instead on clicking the boxes one by one.
 
 ## Technologies Used
 
@@ -195,6 +198,8 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 ## Testing
 
+**general testing:**
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 - [W3C Markup Validator](https://validator.w3.org/) : [Result](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/validators/CSS-validator.png)
@@ -208,33 +213,50 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - Navbar pages are linked correctly to the right page.
 
-- In rules page the hint button shows the number of hints left and in each click shows a new hint till the player ran out of hints.
+- Social links and more games are linked to the right page and open a new tab when clicked on.
 
-- When players left-click on squares that should be colored; it is a success and the player doesn't lose a life.
-
-- When the player left-click on the squares that should be gray(blank). it's a mistake and the player loses a life.
-
-- When the player right-clicks on the square that should be colored; it is a success and the player doesn't lose a life.
-
-- When players right-click on the square that should be gray(blank); it is a success and the player doesn't lose a life.
-
-- When the player lost all their lives an alert shows up that they lost the game and page reloads.
-
-- When the player wins they get an alert that the won the game, all the squares are shown and the page reloads.
-
-- Anytime the player makes a mistake they lose one HP and it shows in the header above the page under the navbar.
-
-***Contact form:***
+**Contact form:**
 
 1. The player can find the support in the left corner of the footer on each page.
  
-2. Try to submit the empty form and verify that an error message about the required fields appears.
+1. Try to submit the empty form and verify that an error message about the required fields appears.
     
-3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
+1. Try to submit the form with an invalid email address and verify that a relevant error message appears.
     
-4. Try to submit the form with all inputs valid and verify that a success message appears and Modal closes after few Seconds.
+1. Try to submit the form with all inputs valid and verify that a success message appears and Modal closes after few Seconds.
 
-5. A massage will be send to support from the player with their request.
+1. A massage will be send to support from the player with their request.
+
+ **Hint button testing:**
+
+- In rules page the hint button shows the number of hints left and in each click shows a new hint till the player ran out of hints.
+
+ **Nanogram puzzle rules testing:**
+
+- **When colored button is active:**
+
+  - If player click on the colored squares; this square shows it's color and player don't lose any life.
+  
+  - If player click on the gray squares; this square shows it's color and player loses a life. 
+  
+- **When gray button is active:**
+
+  - If player click on the colored squares; this square shows it's color and player loses a life.
+  
+  - If player click on the gray squares; this square shows it's color and player don't lose any life. 
+
+- **Losing and wining Rules:**
+
+- When the player lost all their lives an alert shows up that they lost the game and page reloads.
+
+- When the player find all the colored boxes or all the gray boxes before they run out of lives; player wins the game and get an alert that they have won the game, all the squares are shown and the page reloads.
+
+**Google map testing:**
+
+- When player clicks on a table row which shows one of the 10 top players:
+  - The color and background color of this row changes.
+  - Map increases the zoom on the location.
+  - Pages scrolles smoothly to the location of this player.
 
 ### **Further Testing**
 
@@ -252,10 +274,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - Sometimes the browser doesn't open the site but after reloading the page it workes properly.
 
-
 ## **Deployment**
 
-Following steps has been taken to deploy Tadig restaurant website on GitHub pages;
+Following steps has been taken to deploy Nanogram puzzle website on GitHub pages;
 
 1. Go to GitHub and click on repository [behnazkhoshnood
 /

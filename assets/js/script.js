@@ -1,7 +1,10 @@
 
 $(document).ready(function () {
     
-    //                                                       loosing HP rules
+    /* Hp decrementing function
+       @param{void}Nothing
+       @returns 
+    */
     function decrementHP() {
         let lives = document.getElementById("hp");
         let currentCount = lives.innerText;
@@ -22,7 +25,7 @@ $(document).ready(function () {
             lives.style.color = "red";
         }
     }
-    
+   
  //                                                   hint rules
 
  let notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.","In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
