@@ -274,6 +274,52 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - Sometimes the browser doesn't open the site but after reloading the page it workes properly.
 
+## **Fixed bugs**
+
+- To defrenciate between gray and colored buttons I was using the right and left mouse click but taphold on touch devices was not functional. I changed the codes by adding colored and gray buttons on the page and make functions related to if these buttons are active or not:
+
+**Previous codes**
+ 
+ -     $(".square").on("click", function(){
+        $(this).removeClass("square").unbind("click").unbind("contextmenu");
+       if($(this).hasClass("gray")){
+         $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
+         decrementHP(); 
+         console.log("gray") 
+       }else{
+         $(this).removeClass("not-clickes-color").addClass("clicked-color");
+         console.log("colored") 
+       }
+       })
+       
+ -          $(".square").on("contextmenu", function () {
+            $(this).removeClass("square").unbind("click").unbind("contextmenu");
+            if ($(this).hasClass("gray")) {
+            $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
+            return false;
+        }
+        else {
+            $(this).removeClass("not-clicked-color").addClass("clicked-color");
+            decrementHP();
+            return false;
+        }
+        });
+    
+       
+ -          $(".square").on("taphold", function () {
+            $(this).removeClass("square").unbind("click").unbind("contextmenu");
+            if ($(this).hasClass("gray")) {
+            $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
+            return false;
+        }
+        else {
+            $(this).removeClass("not-clicked-color").addClass("clicked-color");
+            decrementHP();
+            return false;
+        }
+        }); 
+
+
 ## **Deployment**
 
 The following steps have been taken to deploy the Nanogram puzzle website on GitHub pages;
