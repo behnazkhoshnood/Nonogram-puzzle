@@ -365,7 +365,8 @@ body{
     text-align: center;
 }
 
-table{
+#names
+{
     height: 460px;
     width: 90%;
     border: 1px solid;
@@ -636,6 +637,12 @@ small{
 }
 
 @media only screen and (min-width:1101px) and (max-width: 1500px) {
+.nanogram,
+.nanogram-rules,
+#names,
+#map{
+    max-width: 75%;
+}
     
 .black,
 .red,
@@ -670,8 +677,11 @@ small{
 
 @media only screen and (min-width:1501px){
       
-.nanogram{
-    max-width: 70%;
+.nanogram,
+.nanogram-rules,
+#names,
+#map{
+    max-width: 75%;
 }
     
 .black,

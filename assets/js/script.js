@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-    /* Hp decrementing function
-       @param{void}Nothing
+    /* A function that decreaces hp
        return{string}lives.innerText
     */
     function decrementHP() {
