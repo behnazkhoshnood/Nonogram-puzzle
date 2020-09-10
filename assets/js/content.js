@@ -16,12 +16,12 @@ const locations = [
 ];
 const img = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
 /**  script.js content **/
-    const notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.",
+const notes = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.",
     "In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
     "Now click on the gray button and then click on all the boxes in first and last column since they already have one colored box in them",
     "First click on all the boxes in 3rd row when colored button is active"];
-    const noHints = "Sorry, you have no hints left.";
-    const winingAlert = "congratulations. You have won the game";
-    const losingAlert = "You've lost this time! Good luck for your next try";
-    /** sendEmail.js content **/
-   const supportMsg = "Your massage has been successfully sent."
+const noHints = "Sorry, you have no hints left.";
+const winingMsg = "congratulations. You have won the game";
+const losingAlert = "You've lost this time! Good luck for your next try";
+/** sendEmail.js content **/
+const supportMsg = "Your massage has been successfully sent."

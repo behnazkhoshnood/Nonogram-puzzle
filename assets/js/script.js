@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    /* A function that decreaces hp
-       return{string}lives.innerText
-    */
+    /* A function that decrement hp. */
     function decrementHP() {
         const lives = document.getElementById("hp");
         let currentCount = lives.innerText;
@@ -19,11 +17,8 @@ $(document).ready(function () {
             lives.style.color = "red";
         }
     }
+       /* Changes the hint note when hint btn is clicked and unbindes click if counter is less than zero*/ 
     let counter = 4;
-    /* A function for the hint botton
-      @param{void}
-      @return{string}notes
-    */
     $("#hint-btn").click(function () {
         counter--;
         $("#hint-note").html(notes[counter]);
@@ -37,14 +32,13 @@ $(document).ready(function () {
     $(".gray").addClass("not-clicked-gray");
     const colored = $(".square").not(".gray");
     $(colored).addClass("not-clicked-color");
-    /* A function to switch between two buttons
-       @param{void};
-       @return{}
-    */
-    $(".switch").on("click", function () {
+    /**  switch the "active" class between gray and colored btn.*/
+      $(".switch").on("click", function () {
         $(".switch").removeClass("active");
         $(this).addClass("active");
-    });
+    });  
+    /** on click function removes "square" class and unbind the square.
+     * If "colored switch btn" is active, this square is colored and all the other colored squares are clicked alert winingMsg.*/
     $(".square").on("click", function () {
         $(this).removeClass("square").unbind("click");
         if ($("#colored").hasClass("active") && $(this).hasClass("not-clicked-color")) {
@@ -52,29 +46,32 @@ $(document).ready(function () {
             if ($(".not-clicked-color").length === 0) {
                 if ($(this).hasClass("clicked-color")) {
                     $(".square").removeClass("square");
-                    alert(winingAlert);
+                    alert(winingMsg);
                     setTimeout(function () {
                         location.reload(true);
                     }, 500);
                 }
             }
         }
+        /** If gray squares are clicked when "colored switch btn" is active, decrement hp. */
         if ($("#colored").hasClass("active") && $(this).hasClass("not-clicked-gray")) {
             $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
             decrementHP();
         }
+        /** If gray squares are clicked when "gray switch btn" is active, if all the other gray squares are clicked, showes the wining message. */
         if ($("#gray").hasClass("active") && $(this).hasClass("not-clicked-gray")) {
             $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
             if ($(".not-clicked-gray").length === 0) {
                 if ($(this).hasClass("clicked-gray")) {
                     $(".square").removeClass("square");
-                    alert(winingAlert);
+                    alert(winingMsg);
                     setTimeout(function () {
                         location.reload(true);
                     }, 500);
                 }
             }
         }
+         /** If a colored square is clicked when "gray switch btn" is active, decrement hp. If all the other colored squares are clicked, showes the wining message. */
         if ($("#gray").hasClass("active") && $(this).hasClass("not-clicked-color")) {
             $(this).removeClass("not-clicked-color").addClass("clicked-color");
             decrementHP();
@@ -89,4 +86,4 @@ $(document).ready(function () {
             }
         }
     });
-})
+});

@@ -17,13 +17,13 @@ function initMap() {
     new MarkerClusterer(map, markers,
         {
             imagePath:
-            img
+                img
         });
 }
 $(document).ready(function () {
     renderRankingTable();
 });
-/** A function that render ranking table and bring back the location of the labels of each table row on the google map. **/
+/** A function that render ranking table and bring back the location of the         labels of each table row on the google map. **/
 function renderRankingTable() {
     const namesTable = $("#names tr").not("tr:first");
     const rows = Array.from(namesTable);
@@ -37,11 +37,11 @@ function renderRankingTable() {
     });
     $("tr").click(selectRanking);
 }
- /*  A function that select map marker by the players name.
- * @param {string} m
- * @return {string} m.label
- */ 
- 
+/*  A function that select map marker by the players name and reove the             previous markers from the map.
+*   @param {string} m
+*   @return {string} m.label
+*/
+
 function selectMapMarker(row) {
     const nameCell = row.getElementsByTagName("td")[1];
     const name = nameCell.innerHTML;

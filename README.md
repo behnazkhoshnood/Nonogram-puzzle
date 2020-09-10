@@ -206,6 +206,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) : [Result](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/validators/HTML-validator.png)
 
+- [Grammarly](https://app.grammarly.com/) used to fix any misspells.
+
+- [JSHint](https://jshint.com/) used to check the script codes.
+
+- [JSLint](https://jslint.com/) used to check the script codes. 
+
 - Further, the testing of the project has been carried out from the beginning using google developer tools.
 
 - User stories from the UX section that didn't need usage of javascript were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
