@@ -63,15 +63,16 @@ p {
 }
 
 h5,
-h6, 
 label{
    font-family: "Sriracha", cursive;
-   text-align: center; 
+   text-align: center;
+   
 }
 
 h6{
-    width: 85%;
-    margin: 0 auto;
+  font-family: "Sriracha", cursive;
+  text-align: justify;
+  text-align-last: center;  
 }
 
 ul {
@@ -232,6 +233,13 @@ body{
 
 /* -----------------------------------------------------Nanogram style */
 
+#guid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .switch{
     margin-right: 5px;
     margin-left: 5px;
@@ -365,8 +373,7 @@ body{
     text-align: center;
 }
 
-#names
-{
+#names{
     height: 460px;
     width: 90%;
     border: 1px solid;
