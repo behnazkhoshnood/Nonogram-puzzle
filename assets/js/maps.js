@@ -1,18 +1,10 @@
-/**
- * Variables
- **/
-let markers = null;
-let map = null;
-let previousMarker = null;
-
 /**  
  * A function that initialize the google map.
  **/
 function initMap() {
-    const myLatlng = {lat: 44.5200, lng: 36.3000};
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
-        center: myLatlng
+        center: INIT_MAP
     });
     markers = USER_LOCATIONS.map(function (location, i) {
         return new google.maps.Marker({
@@ -33,10 +25,8 @@ function initMap() {
 /** 
  * A function that render ranking table and bring back the location of the      * labels of each table row on the google map.
  **/
-function renderRankingTable() {
-    const namesTable = $("#names tr").not("tr:first");
-    const rows = Array.from(namesTable);
-    rows.forEach(function (row) {
+function renderRankingTable() { 
+    ROWS.forEach(function (row) {
         const createClickHandler = function (row) {
             return function () {
                 selectMapMarker(row);

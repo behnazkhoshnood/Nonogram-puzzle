@@ -5,7 +5,7 @@ $(document).ready(function () {
         const lives = document.getElementById("hp");
         let currentCount = lives.innerText;
         if (currentCount == 0) {
-            alert(losingAlert);
+            alert(LOSING_MESSAGE);
             location.reload();
         } else {
             lives.innerText = --currentCount;
@@ -29,20 +29,22 @@ $(document).ready(function () {
             $("#hint-note").html(NO_HINTS);
         }
     });
+    
     $(".gray").addClass("not-clicked-gray");
     const colored = $(".square").not(".gray");
-    $(colored).addClass(".not-clicked-color");
+    $(colored).addClass(NOT_CLICKED_COLORED);
     /**  switch the "active" class between gray and colored btn.*/
       $(".switch").on("click", function () {
         $(".switch").removeClass("active");
         $(this).addClass("active");
-    });  
+    }); 
+     
     /** on click function removes "square" class and unbind the square.
      * If "colored switch btn" is active, this square is colored and all the other colored squares are clicked alert winingMsg.*/
     $(".square").on("click", function () {
         $(this).removeClass("square").unbind("click");
-        if ($("#colored").hasClass("active") && $(this).hasClass(notClickedColor)) {
-            $(this).removeClass(".not-clicked-color").addClass("clicked-color");
+        if ($("#colored").hasClass("active") && $(this).hasClass(NOT_CLICKED_COLORED)) {
+            $(this).removeClass(NOT_CLICKED_COLORED).addClass("clicked-color");
             if ($(".not-clicked-color").length === 0) {
                 if ($(this).hasClass("clicked-color")) {
                     $(".square").removeClass("square");
@@ -72,8 +74,8 @@ $(document).ready(function () {
             }
         }
          /** If a colored square is clicked when "gray switch btn" is active, decrement hp. If all the other colored squares are clicked, showes the wining message. */
-        if ($("#gray").hasClass("active") && $(this).hasClass("not-clicked-color")) {
-            $(this).removeClass("not-clicked-color").addClass("clicked-color");
+        if ($("#gray").hasClass("active") && $(this).hasClass(NOT_CLICKED_COLORED)) {
+            $(this).removeClass(NOT_CLICKED_COLORED).addClass("clicked-color");
             decrementHP();
             if ($(".not-clicked-color").length === 0) {
                 if ($(this).hasClass("clicked-color")) {
