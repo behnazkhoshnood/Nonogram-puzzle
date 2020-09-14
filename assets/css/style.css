@@ -62,17 +62,18 @@ p {
     padding-bottom: 10px;
 }
 
-h5,
 label{
    font-family: "Sriracha", cursive;
    text-align: center;
    
 }
 
+h5,
 h6{
   font-family: "Sriracha", cursive;
   text-align: justify;
   text-align-last: center;  
+  margin: 10px;
 }
 
 ul {
@@ -281,7 +282,7 @@ body{
 }
 
 #hint-note{
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .nanogram-rules{

@@ -21,17 +21,17 @@ $(document).ready(function () {
     let counter = 4;
     $("#hint-btn").click(function () {
         counter--;
-        $("#hint-note").html(notes[counter]);
+        $("#hint-note").html(NOTES[counter]);
         $("#hints").html(counter);
         if (counter < 0) {
             $("#hints").html(0);
             $("#hint-btn").unbind("click");
-            $("#hint-note").html(noHints);
+            $("#hint-note").html(NO_HINTS);
         }
     });
     $(".gray").addClass("not-clicked-gray");
     const colored = $(".square").not(".gray");
-    $(colored).addClass("not-clicked-color");
+    $(colored).addClass(".not-clicked-color");
     /**  switch the "active" class between gray and colored btn.*/
       $(".switch").on("click", function () {
         $(".switch").removeClass("active");
@@ -41,12 +41,12 @@ $(document).ready(function () {
      * If "colored switch btn" is active, this square is colored and all the other colored squares are clicked alert winingMsg.*/
     $(".square").on("click", function () {
         $(this).removeClass("square").unbind("click");
-        if ($("#colored").hasClass("active") && $(this).hasClass("not-clicked-color")) {
-            $(this).removeClass("not-clicked-color").addClass("clicked-color");
+        if ($("#colored").hasClass("active") && $(this).hasClass(notClickedColor)) {
+            $(this).removeClass(".not-clicked-color").addClass("clicked-color");
             if ($(".not-clicked-color").length === 0) {
                 if ($(this).hasClass("clicked-color")) {
                     $(".square").removeClass("square");
-                    alert(winingMsg);
+                    alert(WINING_MESSAGE);
                     setTimeout(function () {
                         location.reload(true);
                     }, 500);
@@ -64,7 +64,7 @@ $(document).ready(function () {
             if ($(".not-clicked-gray").length === 0) {
                 if ($(this).hasClass("clicked-gray")) {
                     $(".square").removeClass("square");
-                    alert(winingMsg);
+                    alert(WINING_MESSAGE);
                     setTimeout(function () {
                         location.reload(true);
                     }, 500);
@@ -78,7 +78,7 @@ $(document).ready(function () {
             if ($(".not-clicked-color").length === 0) {
                 if ($(this).hasClass("clicked-color")) {
                     $(".square").removeClass("square");
-                    alert(winingAlert);
+                    alert(WINING_MESSAGE);
                     setTimeout(function () {
                         location.reload(true);
                     }, 500);
