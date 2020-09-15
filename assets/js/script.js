@@ -41,23 +41,36 @@ $(document).ready(function () {
     $(".gray").addClass("not-clicked-gray");
     const colored = $(".square").not(".gray");
     $(colored).addClass(NOT_CLICKED_COLORED);
+<<<<<<< HEAD
     /**  
      * Switches the "active" class between gray and colored btn.
      **/
+=======
+    /**  switch the "active" class between gray and colored btn.*/
+>>>>>>> 3348557cdf30e11f88a7bd353e69fa1ab019bbba
       $(".switch").on("click", function () {
         $(".switch").removeClass("active");
         $(this).addClass("active");
     }); 
      
+<<<<<<< HEAD
     /** On click function removes "square" class from, and unbind this square.
      * If "colored switch btn" is active, this square is colored and all the 
      * other colored squares are clicked alert the wining message.
      **/
+=======
+    /** on click function removes "square" class and unbind the square.
+     * If "colored switch btn" is active, this square is colored and all the other colored squares are clicked alert winingMsg.*/
+>>>>>>> 3348557cdf30e11f88a7bd353e69fa1ab019bbba
     $(".square").on("click", function () {
         $(this).removeClass("square").unbind("click");
         if ($("#colored").hasClass("active") && $(this).hasClass(NOT_CLICKED_COLORED)) {
             $(this).removeClass(NOT_CLICKED_COLORED).addClass("clicked-color");
+<<<<<<< HEAD
             if ($("." + NOT_CLICKED_COLORED).length === 0) {
+=======
+            if ($(".not-clicked-color").length === 0) {
+>>>>>>> 3348557cdf30e11f88a7bd353e69fa1ab019bbba
                 if ($(this).hasClass("clicked-color")) {
                     $(".square").removeClass("square");
                     alert(WINING_MESSAGE);
@@ -91,11 +104,15 @@ $(document).ready(function () {
                 }
             }
         }
+<<<<<<< HEAD
         
          /** 
           * If a colored square is clicked when "gray switch btn" is active, 
           * decrement hp. If all the other colored squares are clicked, showes * the wining message. 
           **/
+=======
+         /** If a colored square is clicked when "gray switch btn" is active, decrement hp. If all the other colored squares are clicked, showes the wining message. */
+>>>>>>> 3348557cdf30e11f88a7bd353e69fa1ab019bbba
         if ($("#gray").hasClass("active") && $(this).hasClass(NOT_CLICKED_COLORED)) {
             $(this).removeClass(NOT_CLICKED_COLORED).addClass("clicked-color");
             decrementHP();

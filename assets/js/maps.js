@@ -12,6 +12,9 @@ function initMap() {
             label: USER_NAMES[i % USER_NAMES.length]
         });
     });
+    if (markers === null){
+        alert("Contact Sopport")
+    }
     new MarkerClusterer(map, markers,
         {
             imagePath:
@@ -58,7 +61,10 @@ function selectMapMarker(row) {
         map.panTo(marker.position);
     }
 }
-/** Changes the color of the selected row in the ranking table. **/
+
+/** 
+ * Changes the color of the selected row in the ranking table. 
+**/
 function selectRanking() {
     $("tr").removeClass(BG_PURPLE);
     $(this).addClass(BG_PURPLE);
@@ -67,9 +73,14 @@ function selectRanking() {
         initMap();
     }
 }
-/** / A function to scroll to map. **/
+/** 
+ *  A function to scroll to map.
+ **/
 function scrollToMap() {
     const map = $("#map");
     map[0].scrollIntoView({behavior: "smooth"});
-
 }
+
+$(document).ready(function () {
+    renderRankingTable();
+});
