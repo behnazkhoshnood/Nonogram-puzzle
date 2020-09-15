@@ -228,37 +228,37 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 **Contact form:**
 
-1. The player can find the support in the left corner of the footer on each page.
+ 1. The player can find the support in the left corner of the footer on each page.
  
-1. Try to submit the empty form and verify that an error message about the required fields appears.
+ 1. Try to submit the empty form and verify that an error message about the required fields appears.
     
-1. Try to submit the form with an invalid email address and verify that a relevant error message appears.
+ 1. Try to submit the form with an invalid email address and verify that a relevant error message appears.
     
-1. Try to submit the form with all inputs valid and verify that a success message appears and Modal closes after a few seconds.
+ 1. Try to submit the form with all inputs valid and verify that a success message appears and Modal closes after a few seconds.
 
-1. A message will be sent to support from the player with their request.
+ 1. A message will be sent to support from the player with their request.
 
-Support button | Inputs requirment
-- | -
-![Support button](assets/images/support-btn.png) | ![Inputs requirment](assets/images/input-required.png)
+ Support button | Inputs requirment
+ - | -
+ ![Support button](assets/images/support-btn.png) | ![Inputs requirment](assets/images/input-required.png)
 
-Success message | Email request
-- | - 
-![Success message](assets/images/successfully-sent-request.png) | ![Email request](assets/images/email.png)
+ Success message | Email request
+ - | - 
+ ![Success message](assets/images/successfully-sent-request.png) | ![Email request](assets/images/email.png)
 
- **Hint button testing:**
+**Hint button testing:**
 
-- In the rules page, the hint button shows the number of hints left, and in each click shows a new hint till the player ran out of hints.
+ - In the rules page, the hint button shows the number of hints left, and in each click shows a new hint till the player ran out of hints.
 
-Hint 4 | Hint 3 | Hint 2
-- | - | -
-![Hint 4](assets/images/hint-4.png) | ![Hint 3](assets/images/hint-3.png) | ![Hint 2](assets/images/hint-2.png)
+ Hint 4 | Hint 3 | Hint 2
+ - | - | -
+ ![Hint 4](assets/images/hint-4.png) | ![Hint 3](assets/images/hint-3.png) | ![Hint 2](assets/images/hint-2.png)
  
-Hint 1 | Hint 0 | No hints
-- | - | -
-![Hint 1](assets/images/hint-1.png) | ![Hint 0](assets/images/hint-0.png) | ![No hints](assets/images/no-hints-note.png)
+ Hint 1 | Hint 0 | No hints
+ - | - | -
+ ![Hint 1](assets/images/hint-1.png) | ![Hint 0](assets/images/hint-0.png) | ![No hints](assets/images/no-hints-note.png)
 
- **Nanogram puzzle rules testing:**
+**Nanogram puzzle rules testing:**
 
 - **When the colored button is active:**
 
@@ -266,9 +266,9 @@ Hint 1 | Hint 0 | No hints
   
   **B** - If the player clicks on the gray squares; this square shows its color and the player loses a life. 
   
-A | B
-- | -
-![Decrement HP](assets/images/colored-active-wrong.png) | ![No HP decrementations](assets/images/colored-active-right.png)
+ A | B
+ - | -
+ ![Decrement HP](assets/images/colored-active-wrong.png) | ![No HP decrementations](assets/images/colored-active-right.png)
   
 - **When the gray button is active:**
 
@@ -276,36 +276,36 @@ A | B
   
   **D** - If the player clicks on the gray squares; this square shows it's color and players don't lose any life. 
   
-C | D
-- | -
-![Decrement HP](assets/images/gray-active-wrong.png) | ![No HP decrementations](assets/images/gray-active-right.png)
+ C | D
+ - | -
+ ![Decrement HP](assets/images/gray-active-wrong.png) | ![No HP decrementations](assets/images/gray-active-right.png)
 
 - **Losing and wining Rules:**
 
-- When the player lost all their lives an alert shows up that they lost the game and page reloads.
+ - When the player lost all their lives an alert shows up that they lost the game and page reloads.
 
-- When the player finds all the colored boxes or all the gray boxes before they run out of lives; the player wins the game and gets an alert that they have won the game, all the squares are shown and the page reloads.
+ - When the player finds all the colored boxes or all the gray boxes before they run out of lives; the player wins the game and gets an alert that they have won the game, all the squares are shown and the page reloads.
 
-Losing Alert | Wining Alert
-- | -
-![Losing Alert](assets/images/losing-alert.png) | ![Wining Alert](assets/images/wining-alert.png)
+ Losing Alert | Wining Alert
+ - | -
+ ![Losing Alert](assets/images/losing-alert.png) | ![Wining Alert](assets/images/wining-alert.png)
 
 **Google map testing:**
 
-- When the player clicks on a table row which shows one of the 10 top players:
+ - When the player clicks on a table row which shows one  of the 10 top players:
   - The color and background color of this row changes and if any other row was clicked before, it changes to default colors.
   - The map increases the zoom on the location.
   - The page scrolls smoothly to the location of this player.
   
-Table view | Google map view
-- | -
-![Table view](assets/images/table-view.png) | ![Google map view](assets/images/google-map-view.png)
+ Table view | Google map view
+ - | -
+ ![Table view](assets/images/table-view.png) | ![Google map view](assets/images/google-map-view.png)
 
  - If player clicks on the table header page scrolls smoothly to the map and shows the location of all the players on the map.
  
-Table view | Google map view
-- | -
-![Clicked on table header](assets/images/click-on-table-header.png) | ![Google map view](assets/images/all-users-map.png)
+ Table view | Google map view
+ - | -
+ ![Clicked on table header](assets/images/click-on-table-header.png) | ![Google map view](assets/images/all-users-map.png)
 
 ### **Further Testing**
 
@@ -411,11 +411,3 @@ Follow these steps to run the website locally on your machine;
 1. Code Institute tutorials were very helpful throughout the whole project.
 
 1. Bootstrap is also used in the project. (Bootstrap grid, Bootstrap Modal, and Bootstrap classes)
-
-
-
-
-
-
-
-
