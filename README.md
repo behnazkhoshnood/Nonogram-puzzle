@@ -212,6 +212,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - [JSLint](https://jslint.com/) used to check the script codes. 
 
+- All the constants are mentaioned in different JS file.
+
 - Further, the testing of the project has been carried out from the beginning using google developer tools.
 
 - User stories from the UX section that didn't need usage of javascript were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
@@ -282,49 +284,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## **Fixed bugs**
 
-- To defrenciate between gray and colored buttons I was using the right and left mouse click but taphold on touch devices was not functional. I changed the codes by adding colored and gray buttons on the page and make functions related to if these buttons are active or not:
-
-**Previous codes**
- 
- -     $(".square").on("click", function(){
-        $(this).removeClass("square").unbind("click").unbind("contextmenu");
-       if($(this).hasClass("gray")){
-         $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
-         decrementHP(); 
-         console.log("gray") 
-       }else{
-         $(this).removeClass("not-clickes-color").addClass("clicked-color");
-         console.log("colored") 
-       }
-       })
-       
- -          $(".square").on("contextmenu", function () {
-            $(this).removeClass("square").unbind("click").unbind("contextmenu");
-            if ($(this).hasClass("gray")) {
-            $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
-            return false;
-        }
-        else {
-            $(this).removeClass("not-clicked-color").addClass("clicked-color");
-            decrementHP();
-            return false;
-        }
-        });
-    
-       
- -          $(".square").on("taphold", function () {
-            $(this).removeClass("square").unbind("click").unbind("contextmenu");
-            if ($(this).hasClass("gray")) {
-            $(this).removeClass("not-clicked-gray").addClass("clicked-gray");
-            return false;
-        }
-        else {
-            $(this).removeClass("not-clicked-color").addClass("clicked-color");
-            decrementHP();
-            return false;
-        }
-        }); 
-
+- To defrenciate between gray and colored buttons I was using the right and left mouse click but taphold on touch devices was not functional. I changed the codes by adding colored and gray buttons on the page and make functions related to if these buttons are active or not.
 
 ## **Deployment**
 

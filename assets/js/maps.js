@@ -1,33 +1,33 @@
-let markers;
-let map;
-let previousMarker;
-/**  A function that initialize the google map. **/
+/**  
+ * A function that initialize the google map.
+**/
 function initMap() {
-    const myLatlng = {lat: 44.5200, lng: 36.3000};
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
-        center: myLatlng
+        center: INIT_MAP_POSITION
     });
-    markers = locations.map(function (location, i) {
+    markers = USER_LOCATIONS.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: USER_NAMES[i % USER_NAMES.length]
         });
     });
     new MarkerClusterer(map, markers,
         {
             imagePath:
-                img
+            INIT_MAP_IMG
         });
 }
 $(document).ready(function () {
     renderRankingTable();
 });
-/** A function that render ranking table and bring back the location of the         labels of each table row on the google map. **/
+
+/** 
+ * A function that render ranking table and bring back the location of the 
+ * users of each row on the google map. 
+**/
 function renderRankingTable() {
-    const namesTable = $("#names tr").not("tr:first");
-    const rows = Array.from(namesTable);
-    rows.forEach(function (row) {
+    ROWS.forEach(function (row) {
         const createClickHandler = function (row) {
             return function () {
                 selectMapMarker(row);
@@ -37,16 +37,16 @@ function renderRankingTable() {
     });
     $("tr").click(selectRanking);
 }
-/*  A function that select map marker by the players name and reove the             previous markers from the map.
+
+/** A function that select map marker by the players name.
 *   @param {string} m
 *   @return {string} m.label
-*/
-
+**/ 
 function selectMapMarker(row) {
-    const nameCell = row.getElementsByTagName("td")[1];
-    const name = nameCell.innerHTML;
+    const NAME_CELL = row.getElementsByTagName("td")[1];
+    const NAME = NAME_CELL.innerHTML;
     const marker = markers.find(function (m) {
-        return m.label === name;
+        return m.label === NAME;
     });
     if (marker) {
         if (previousMarker && previousMarker.setMap) {
@@ -54,14 +54,14 @@ function selectMapMarker(row) {
         }
         marker.setMap(map);
         previousMarker = marker;
-        map.setZoom(13);
+        map.setZoom(10);
         map.panTo(marker.position);
     }
 }
 /** Changes the color of the selected row in the ranking table. **/
 function selectRanking() {
-    $("tr").removeClass("make-purple");
-    $(this).addClass("make-purple");
+    $("tr").removeClass(BG_PURPLE);
+    $(this).addClass(BG_PURPLE);
     scrollToMap();
     if ($(this).hasClass("header")) {
         initMap();
@@ -69,6 +69,7 @@ function selectRanking() {
 }
 /** / A function to scroll to map. **/
 function scrollToMap() {
-    const map = document.getElementById("map");
-    map.scrollIntoView({behavior: "smooth"});
+    const map = $("#map");
+    map[0].scrollIntoView({behavior: "smooth"});
+
 }
