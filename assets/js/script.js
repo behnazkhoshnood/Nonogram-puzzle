@@ -7,6 +7,8 @@ $(document).ready(function () {
     * A function that decrement HP.  
     **/
     function decrementHP() {
+        const LIVES = document.getElementById("hp");
+        let currentCount = LIVES.innerText;
         if (currentCount == 0) {
             alert(LOSING_MESSAGE);
             location.reload();

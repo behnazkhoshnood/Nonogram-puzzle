@@ -27,8 +27,6 @@ const BG_PURPLE = "make-purple";
 /** 
  * scripts.js constants. 
 **/
-const LIVES = document.getElementById("hp");
-let currentCount = LIVES.innerText;
 let counter = 4;
 const NOTES = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.",
     "In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
@@ -48,4 +46,4 @@ const LOSING_MESSAGE = "You've lost this time! Good luck with your next try";
 /** 
  * sendEmail.js constants. 
 **/
-const SUPPORT_MESSAGE = "Your massage has been successfully sent.";
+const SUPPORT_MESSAGE = "Your message has been successfully sent.";
