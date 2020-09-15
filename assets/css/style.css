@@ -383,7 +383,7 @@ body{
     margin-bottom: 25px;
 }
 
-#header{
+.table-header{
     background-color: #896BB3;
     color: #fafafa;
 }

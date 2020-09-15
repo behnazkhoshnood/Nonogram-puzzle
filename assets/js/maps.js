@@ -69,7 +69,7 @@ function selectRanking() {
     $("tr").removeClass(BG_PURPLE);
     $(this).addClass(BG_PURPLE);
     scrollToMap();
-    if ($(this).hasClass("header")) {
+    if ($(this).hasClass("table-header")) {
         initMap();
     }
 }

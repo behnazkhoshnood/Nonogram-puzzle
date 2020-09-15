@@ -4,7 +4,7 @@
 
 [View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle)
 
-![Desktop view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/views/device-view.png?raw=true)
+![Desktop view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/view/device-views.png?raw=true)
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
@@ -160,17 +160,17 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
 
-  - Fontawesome icons were used on all pages throughout the website to add icons for aesthetic and UX purposes.
+  - Fontawesome icons are used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
 - [Hover.css](https://ianlunn.github.io/Hover/)
 
-  - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
+  - Hover.css is used on the Social Media icons in the footer to add the float transition while being hovered over.
 
   - The hover effect hvr-sweep-to-bottom has been used in menu buttons.
 
-  - Hover.css was used on the Sign in / Sign up button.
+  - Hover.css is used on the Sign in / Sign up button.
 
-  - Hover.css was used on the Reservation and Rate us button.
+  - Hover.css is used on the Reservation and Rate us button.
   
 - [Google map](https://cloud.google.com/maps-platform/)
   
@@ -182,7 +182,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - [Git](https://en.wikipedia.org/wiki/Git)
 
-  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+  - Git is used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 
 - [github](https://github.com/)
 
@@ -194,7 +194,11 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
 
-  - Balsamiq was used to create the wireframes during the design process.
+  - Balsamiq is used to create the wireframes during the design process.
+  
+- [Free Apple MacBook and iphone frames]()
+  
+  - This program is used to add the desktop and mobile devices fram views.
 
 ## Testing
 
@@ -218,7 +222,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - User stories from the UX section that didn't need usage of javascript were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-
 - Navbar pages are linked correctly to the right page.
 
 - Social links and more games are linked to the right page and open a new tab when clicked on.
@@ -235,23 +238,47 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 1. A message will be sent to support from the player with their request.
 
+Support button | Inputs requirment
+- | -
+![Support button](assets/images/support-btn.png) | ![Inputs requirment](assets/images/input-required.png)
+
+Success message | Email request
+- | - 
+![Success message](assets/images/successfully-sent-request.png) | ![Email request](assets/images/email.png)
+
  **Hint button testing:**
 
 - In the rules page, the hint button shows the number of hints left, and in each click shows a new hint till the player ran out of hints.
+
+Hint 4 | Hint 3 | Hint 2
+- | - | -
+![Hint 4](assets/images/hint-4.png) | ![Hint 3](assets/images/hint-3.png) | ![Hint 2](assets/images/hint-2.png)
+ 
+Hint 1 | Hint 0 | No hints
+- | - | -
+![Hint 1](assets/images/hint-1.png) | ![Hint 0](assets/images/hint-0.png) | ![No hints](assets/images/no-hints-note.png)
 
  **Nanogram puzzle rules testing:**
 
 - **When the colored button is active:**
 
-  - If the player clicks on the colored squares; this square shows it's color and players don't lose any life.
+  **A** - If the player clicks on the colored squares; this square shows it's color and players don't lose any life.
   
-  - If the player clicks on the gray squares; this square shows its color and the player loses a life. 
+  **B** - If the player clicks on the gray squares; this square shows its color and the player loses a life. 
+  
+A | B
+- | -
+![Decrement HP](assets/images/colored-active-wrong.png) | ![No HP decrementations](assets/images/colored-active-right.png)
   
 - **When the gray button is active:**
 
-  - If the player clicks on the colored squares; this square shows its color and the player loses a life.
+  **C** - If the player clicks on the colored squares; this square shows its color and the player loses a life.
   
-  - If the player clicks on the gray squares; this square shows it's color and players don't lose any life. 
+  **D** - If the player clicks on the gray squares; this square shows it's color and players don't lose any life. 
+  
+C | D
+- | -
+![Decrement HP](assets/images/gray-active-wrong.png) | ![No HP decrementations](assets/images/gray-active-right.png)
 
 - **Losing and wining Rules:**
 
@@ -259,12 +286,26 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - When the player finds all the colored boxes or all the gray boxes before they run out of lives; the player wins the game and gets an alert that they have won the game, all the squares are shown and the page reloads.
 
+Losing Alert | Wining Alert
+- | -
+![Losing Alert](assets/images/losing-alert.png) | ![Wining Alert](assets/images/wining-alert.png)
+
 **Google map testing:**
 
 - When the player clicks on a table row which shows one of the 10 top players:
-  - The color and background color of this row changes.
+  - The color and background color of this row changes and if any other row was clicked before, it changes to default colors.
   - The map increases the zoom on the location.
   - The page scrolls smoothly to the location of this player.
+  
+Table view | Google map view
+- | -
+![Table view](assets/images/table-view.png) | ![Google map view](assets/images/google-map-view.png)
+
+ - If player clicks on the table header page scrolls smoothly to the map and shows the location of all the players on the map.
+ 
+Table view | Google map view
+- | -
+![Clicked on table header](assets/images/click-on-table-header.png) | ![Google map view](assets/images/all-users-map.png)
 
 ### **Further Testing**
 
@@ -285,6 +326,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ## **Fixed bugs**
 
 - To defrenciate between gray and colored buttons I was using the right and left mouse click but taphold on touch devices was not functional. I changed the codes by adding colored and gray buttons on the page and make functions related to if these buttons are active or not.
+
+- Eror 404 fixed bt adding the favicon.ico .
 
 ## **Deployment**
 
