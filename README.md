@@ -238,24 +238,24 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
  1. A message will be sent to support from the player with their request.
 
- Support button | Inputs requirment
- - | -
+ | Support button | Inputs requirment |
+ | - | - |
  ![Support button](assets/images/support-btn.png) | ![Inputs requirment](assets/images/input-required.png)
 
  Success message | Email request
- - | - 
+ | - | - |
  ![Success message](assets/images/successfully-sent-request.png) | ![Email request](assets/images/email.png)
 
 **Hint button testing:**
 
  - In the rules page, the hint button shows the number of hints left, and in each click shows a new hint till the player ran out of hints.
 
- Hint 4 | Hint 3 | Hint 2
- - | - | -
+ | Hint 4 | Hint 3 | Hint 2 |
+ | - | - | - |
  ![Hint 4](assets/images/hint-4.png) | ![Hint 3](assets/images/hint-3.png) | ![Hint 2](assets/images/hint-2.png)
  
- Hint 1 | Hint 0 | No hints
- - | - | -
+ | Hint 1 | Hint 0 | No hints |
+ | - | - | - |
  ![Hint 1](assets/images/hint-1.png) | ![Hint 0](assets/images/hint-0.png) | ![No hints](assets/images/no-hints-note.png)
 
 **Nanogram puzzle rules testing:**
@@ -266,8 +266,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   
   **B** - If the player clicks on the gray squares; this square shows its color and the player loses a life. 
   
- A | B
- - | -
+ | A | B |
+ | - | - |
  ![Decrement HP](assets/images/colored-active-wrong.png) | ![No HP decrementations](assets/images/colored-active-right.png)
   
 - **When the gray button is active:**
@@ -276,8 +276,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   
   **D** - If the player clicks on the gray squares; this square shows it's color and players don't lose any life. 
   
- C | D
- - | -
+ | C | D |
+ | - | - |
  ![Decrement HP](assets/images/gray-active-wrong.png) | ![No HP decrementations](assets/images/gray-active-right.png)
 
 - **Losing and wining Rules:**
@@ -286,8 +286,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
  - When the player finds all the colored boxes or all the gray boxes before they run out of lives; the player wins the game and gets an alert that they have won the game, all the squares are shown and the page reloads.
 
- Losing Alert | Wining Alert
- - | -
+ | Losing Alert | Wining Alert |
+ | - | - |
  ![Losing Alert](assets/images/losing-alert.png) | ![Wining Alert](assets/images/wining-alert.png)
 
 **Google map testing:**
@@ -297,8 +297,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   - The map increases the zoom on the location.
   - The page scrolls smoothly to the location of this player.
   
- Table view | Google map view
- - | -
+ | Table view | Google map view |
+ | - | - |
  ![Table view](assets/images/table-view.png) | ![Google map view](assets/images/google-map-view.png)
 
  - If player clicks on the table header page scrolls smoothly to the map and shows the location of all the players on the map.
