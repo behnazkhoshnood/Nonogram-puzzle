@@ -27,14 +27,24 @@ const BG_PURPLE = "make-purple";
 /** 
  * scripts.js constants. 
 **/
+const LIVES = document.getElementById("hp");
+let currentCount = LIVES.innerText;
+let counter = 4;
 const NOTES = ["the only way to have a sequence of 1 and 2 seperate colored boxes in the 3rd column is to click on the first and the last boxes in this column when the colored button is active.",
     "In the 2nd row, we want to fit 2 seperate colored boxes in 3 squares.<br> Click on the colored button and then click on the first and the last box in the 2nd row.",
     "Now click on the gray button and then click on all the boxes in first and last column since they already have one colored box in them",
     "First click on all the boxes in 3rd row when colored button is active"];
 const NO_HINTS = "Sorry, you have no hints left.";
-const WINING_MESSAGE = "congratulations. You have won the game";
-const LOSING_MESSAGE = "You've lost this time! Good luck for your next try";
+const SWITCH = ".switch";
+const ACTIVE = "active";
+const SQUARE = "square";
+const GRAY = ".gray";
+const NOT_CLICKED_GRAY = "not-clicked-gray";
 const NOT_CLICKED_COLORED = "not-clicked-color";
+const CLICKED_GRAY = "clicked-gray"
+const CLICKED_COLORED = "clicked-color";
+const WINING_MESSAGE = "congratulations. You have won the game";
+const LOSING_MESSAGE = "You've lost this time! Good luck with your next try";
 /** 
  * sendEmail.js constants. 
 **/
