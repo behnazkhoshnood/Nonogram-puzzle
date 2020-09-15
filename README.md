@@ -4,9 +4,7 @@
 
 [View the live project here.](https://behnazkhoshnood.github.io/Nonogram-puzzle)
 
-Desktop view | Mobile view
-- | - 
-![Desktop view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/view/desktop-view.png?raw=true) | ![Mobile view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/view/mobile-view.png?raw=true)
+![Desktop view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/views/device-view.png?raw=true)
 
 Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
