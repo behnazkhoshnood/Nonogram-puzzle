@@ -303,8 +303,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
  - If player clicks on the table header page scrolls smoothly to the map and shows the location of all the players on the map.
  
- Table view | Google map view
- - | -
+ | Table view | Google map view |
+ | - | - |
  ![Clicked on table header](assets/images/click-on-table-header.png) | ![Google map view](assets/images/all-users-map.png)
 
 ### **Further Testing**
