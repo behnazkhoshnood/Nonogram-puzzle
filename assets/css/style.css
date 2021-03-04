@@ -182,8 +182,8 @@ body{
     background-color: #fafafa;
 }
 
-.ui-menu-color-nanogram,
-.nanogram-footer
+.ui-menu-color-nonogram,
+.nonogram-footer
 {
     background-color: #1982C4;
 }
@@ -232,7 +232,7 @@ body{
     color: #168d16;
 }
 
-/* -----------------------------------------------------Nanogram style */
+/* -----------------------------------------------------nonogram style */
 
 #guid{
     padding-right: 15px;
@@ -285,7 +285,7 @@ body{
     margin: 15px;
 }
 
-.nanogram-rules{
+.nonogram-rules{
     width: 100%;
     margin: 0 auto;
       padding-bottom: 15px;
@@ -293,7 +293,7 @@ body{
 
 }
 
-.nanogram{
+.nonogram{
     margin: 0 auto;
     max-width: 90%;
     padding-bottom: 25px;
@@ -645,8 +645,8 @@ small{
 }
 
 @media only screen and (min-width:1101px) and (max-width: 1500px) {
-.nanogram,
-.nanogram-rules,
+.nonogram,
+.nonogram-rules,
 #names,
 #map{
     max-width: 75%;
@@ -685,8 +685,8 @@ small{
 
 @media only screen and (min-width:1501px){
       
-.nanogram,
-.nanogram-rules,
+.nonogram,
+.nonogram-rules,
 #names,
 #map{
     max-width: 75%;
@@ -718,7 +718,7 @@ font-size: 19px;
 .lvl,
 .lvl-learn,
 .column p{
-    font-size: 20px;
+    font-size: 18px;
 }
   
 }

@@ -1,4 +1,4 @@
-# **Nanogram Puzzle**
+# **Nonogram Puzzle**
 
 ## **Description**
 
@@ -6,7 +6,7 @@
 
 ![Desktop view](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/view/device-views.png?raw=true)
 
-Nanogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
+Nonogram is a puzzle game that is similar to minesweeper. Players should find out which square is colored and which is gray(blank) with the help of the numbers written in the corner squares.
 ## **User Experience (UX)**
  
 This puzzle is a fun colorful game and like all the other simple puzzle game improves players strategy and way of thinking.
@@ -39,7 +39,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
     
     - #64882b for the Rules(index) page which is close to the green.
 
-    - #1982C4 for Nanogram page which is a nice blue color.
+    - #1982C4 for Nonogram page which is a nice blue color.
 
     - #896BB3 for the Ranking page which is in the scope of violet.
 
@@ -53,25 +53,25 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
   - #### First and third section(header and footer):
 
-    - The website consist of 3 pages named: Rules , Nanogram and Ranking. Each page has three sections.
+    - The website consist of 3 pages named: Rules , Nonogram and Ranking. Each page has three sections.
 
     - The content of the header and footer sections are the same in all the pages. The Header section consists of the navbar menu for navigation through the website and the footer section consists of the Contact button, More games, and social media links.
 
   - #### Second section:
 
-    - **Rules and Nanogram pages**
+    - **Rules and Nonogram pages**
 
      -On top of these pages, there are 2 buttons to switch between clicking on colored or gray squares. A header that shows the remaining lives of the player is also added under the nanogram puzzle.
      
     - **Rules page**
 
-     - This section consists of a tutorial nanogram with lots of guidance notes to show how the game works. 
+     - This section consists of a tutorial nonogram with lots of guidance notes to show how the game works. 
       
-     - On this page, there is also a hint button, under the nanogram, that can be used for more guidance throughout the game.
+     - On this page, there is also a hint button, under the nonogram, that can be used for more guidance throughout the game.
      
-    - **Nanogram page**
+    - **Nonogram page**
     
-    - This page consists of the main nanogram puzzle.
+    - This page consists of the main nonogram puzzle.
 
    - **Ranking page**
 
@@ -90,9 +90,9 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
     - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/index-mobile-view.png)
 
-  - Nanogram page Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/nanogram-website-view.png)
+  - Nonogram page Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/nonogram-website-view.png)
   
-    - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Nanogram-mobile-view.png)
+    - Mobile Wireframe - [ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/Nonogram-mobile-view.png)
 
   - Ranking Page Wireframe -[ View](https://github.com/behnazkhoshnood/Nonogram-puzzle/blob/master/assets/wireframes/ranking-website-view.png)
 
@@ -128,7 +128,7 @@ This puzzle is a fun colorful game and like all the other simple puzzle game imp
 
 - Make the raking table based on real players.
 
-- Add more nanogram puzzles.
+- Add more nonogram puzzles.
 
 - Add more easy fun games to the website.
 
@@ -258,7 +258,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
  | - | - | - |
  ![Hint 1](assets/images/hint-1.png) | ![Hint 0](assets/images/hint-0.png) | ![No hints](assets/images/no-hints-note.png)
 
-**Nanogram puzzle rules testing:**
+**Nonogram puzzle rules testing:**
 
 - **When the colored button is active:**
 
@@ -331,11 +331,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## **Deployment**
 
-The following steps have been taken to deploy the Nanogram puzzle website on GitHub pages;
+The following steps have been taken to deploy the Nonogram puzzle website on GitHub pages;
 
 1. Go to GitHub and click on repository [behnazkhoshnood
 /
-Nanogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
+Nonogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
 
 1. Click on **Settings** on the top right of the page
 
@@ -352,7 +352,7 @@ Nanogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
 Follow these steps to run the website locally on your machine;
 
 1. Go to Github repository [behnazkhoshnood
-/Nanogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
+/Nonogram-puzzle](https://github.com/behnazkhoshnood/Nonogram-puzzle)
 
 1. Click on **Clone or Download**
 
